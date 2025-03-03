@@ -1,3 +1,0 @@
-#!/bin/sh
-
-sbcl --load /root/hanky-lisp-code/load-hanky-lisp.lisp $@

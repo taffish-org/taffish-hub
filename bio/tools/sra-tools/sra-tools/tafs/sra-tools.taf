@@ -1,9 +1,0 @@
-+TOOL:sra-tools
-ARGS
-    <else>
-        cat ::*LOAD-DIR*::../sra-tools.info.txt
-    <main>
-        ::cmd:: ::opts::
-RUN
-    <container:taf-sra-tools:docker.io/taffish/sra-tools:latest>
-        ::*MAIN*::

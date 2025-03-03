@@ -1,9 +1,0 @@
-# <bior-base:4.4.2 | KaiyuanHan | 2025-01-10>
-ARGS
-    <else>
-        Rscript --help
-    <main>
-        Rscript ::*APP-ARGS*::
-RUN
-    <container:taf-bior-base:docker.io/taffish/bior-base:latest>
-        ::*MAIN*::

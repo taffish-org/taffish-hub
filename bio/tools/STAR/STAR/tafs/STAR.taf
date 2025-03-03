@@ -1,9 +1,0 @@
-+TOOL:STAR
-ARGS
-    <else>
-        STAR --help
-    <main>
-        STAR ::*APP-ARGS*::
-RUN
-    <container:taf-star:docker.io/taffish/star:latest>
-        ::*MAIN*::

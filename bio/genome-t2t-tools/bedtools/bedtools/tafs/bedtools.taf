@@ -1,9 +1,0 @@
-+TOOL:bedtools
-ARGS
-    <else>
-        bedtools --help
-    <main>
-        bedtools ::*APP-ARGS*::
-RUN
-    <container:taf-bedtools:docker.io/taffish/bedtools:latest>
-        ::*MAIN*::

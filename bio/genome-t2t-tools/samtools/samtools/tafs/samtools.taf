@@ -1,9 +1,0 @@
-+TOOL:samtools
-ARGS
-    <else>
-        samtools --help
-    <main>
-        samtools ::*APP-ARGS*::
-RUN
-    <container:taf-samtools:docker.io/taffish/samtools:latest>
-        ::*MAIN*::

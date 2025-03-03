@@ -1,9 +1,0 @@
-# <bowtie2:2.5.0 | KaiyuanHan | 2025-01-08>
-ARGS
-    <else>
-        bowtie2 --help
-    <main>
-        bowtie2 ::*APP-ARGS*::
-RUN
-    <container:taf-bowtie2:docker.io/taffish/bowtie2:latest>
-        ::*MAIN*::

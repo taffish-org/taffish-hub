@@ -1,9 +1,0 @@
-+TOOL:r-make
-ARGS
-    <port>
-        # local port for r
-    <passwd>
-        # password for R-server
-RUN
-    <local>
-        podman run --name taf-r -v /home:/home -v /newhome:/newhome --workdir=/home/cwwang/ -e runname=taf-r -e PASSWORD=123 -p 8191:8787 docker.io/rocker/rstudio:latest

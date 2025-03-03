@@ -1,9 +1,0 @@
-# <ORFfinder:0.4.3 | KaiyuanHan | 2025-01-08>
-ARGS
-    <main>
-        ORFfinder ::*APP-ARGS*::
-    <else>
-        ORFfinder -h
-RUN
-    <container:taf-orffinder:docker.io/taffish/orffinder:latest>
-        ::*MAIN*::

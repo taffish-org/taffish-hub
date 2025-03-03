@@ -1,9 +1,0 @@
-+TOOL:fastp
-ARGS
-    <else>
-        fastp --help
-    <main>
-        fastp ::*APP-ARGS*::
-RUN
-    <container:taf-fastp:docker.io/taffish/fastp:latest>
-        ::*MAIN*::

@@ -1,9 +1,0 @@
-# <bedtools:v2.31.1 | KaiyuanHan | 2025-01-08>
-ARGS
-    <else>
-        bedtools --help
-    <main>
-        bedtools ::*APP-ARGS*::
-RUN
-    <container:taf-bedtools:docker.io/taffish/bedtools:latest>
-        ::*MAIN*::
