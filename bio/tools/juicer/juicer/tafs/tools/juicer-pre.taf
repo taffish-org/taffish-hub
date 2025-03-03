@@ -1,0 +1,61 @@
+#Pre is a tool of Juicer, it can make .hic matrix file from chromosome interactions' txt file
++TOOL:juicer
+LOAD
+    <args>
+        ../juicer.taf
+ARGS
+    <IN>
+        $(if ( echo "::in::" | grep "\.hic$" > /dev/null 0>&1 ); then echo "250" ; else echo "::in::"; fi)
+    <out-dir>
+        ::pre-out-dir::
+    <OUT>
+        ::pre-out::
+    <java-opts>
+        ::java-opts::
+    <tool>
+        pre
+    <r>
+        25000
+    <j>
+        ::cpu::
+    <tool-opts>
+#       -h                      #show help of juicer-tools-pre
+#       -d                      # only calculate intra chromosome (diagonal) [false]
+#       -f                      #<restriction site file> calculate fragment map, requires restriction site file [not set]
+#       -m                      #<int> only write cells with count above threshold m [0]
+#       -q                      #<int> filter by MAPQ score greater than or equal to q [not set]
+#       -c                      #<chromosome ID> only calculate map on specific chromosome [not set]
+        -r ::r::                #<comma-separated list of resolutions> Only calculate specific resolutions [not set]
+#       -t                      #<tmpDir> Set a temporary directory for writing
+#       -s                      #<statistics file> Add the text statistics file to the Hi-C file header
+#       -g                      #<graphs file> Add the text graphs file to the Hi-C file header
+#       -n                      #Don't normalize the matrices
+#       -z                      #<double> scale factor for hic file
+#       -a                      #<1, 2, 3, 4, 5> filter based on inner, outer, left-left, right-right, tandem pairs respectively
+#       --randomize_position    #randomize positions between fragment sites
+#       --random_seed           #<long> for seeding random number generator
+#       --frag_site_maps        #<fragment site files> for randomization
+#       -k                      #normalizations to include
+        -j ::j::                #number of CPU threads to use
+#       --threads  100          #<int> number of threads
+#       --mndindex              #<filepath> to mnd chr block indices
+#       --conserve-ram          #will minimize RAM usage
+#       --check-ram-usage       #will check ram requirements prior to running
+#       --shell                 #how to execute shell (sh, bash, zsh, etc) [sh]
+    <Genome-id/chomosome-size-file>
+        ::genome-id::
+    <files>
+        juicer-file  /root/juicer/juicer::juicer-version::.jar
+RUN
+    <local>
+        if [ ::IN:: -eq 250 ]
+        then
+            mkdir ::out-dir::
+        fi
+    <::run-set::>
+        if [ ::IN:: -eq 250 ]
+        then
+            echo "[Skip juicer pre]"
+        else
+            java ::java-opts:: -jar ::juicer-file:: ::tool:: ::tool-opts:: ::IN:: ::OUT:: ::Genome-id/chomosome-size-file::
+        fi

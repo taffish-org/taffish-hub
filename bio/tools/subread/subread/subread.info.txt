@@ -1,0 +1,27 @@
+# <subread:2.0.2 | KaiyuanHan | 2025-01-09>
+ARGS
+    <else>
+        cat ::*LOAD-DIR*::../subread.info.txt
+    <main>
+        ::cmd:: --help
+    <cmd>
+        # cell-counts
+        # detectionCall
+        # exactSNP
+        # featureCounts
+        # flattenGTF
+        # genRandomReads
+        # propmapped
+        # qualityScores
+        # removeDup
+        # repair
+        # subindel
+        # subjunc
+        # sublong
+        # subread-align
+        # subread-buildindex
+        # subread-fullscan
+        # txUnique
+RUN
+    <container:taf-subread:docker.io/taffish/subread:latest>
+        ::*MAIN*::

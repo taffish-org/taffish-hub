@@ -1,0 +1,23 @@
++TOOL:muscle
+ARGS
+### Optional ##############################################################################
+    <else>
+        if ( uname -a | grep "^Darwin" | grep "ARM64" ); then ::*LOAD-DIR*::../bin/muscle-osx-arm64.v5.3 -h ; elif ( uname -a | grep "^Linux" | grep "x86_64" ); then ::*LOAD-DIR*::../bin/muscle-linux-x86.v5.3 -h ; else ::cmd:: -h ; fi
+    <opts-add>
+        $(false)
+    <cmd>
+        muscle
+    <main>
+        if ( uname -a | grep "^Darwin" | grep "ARM64" ); then ::*LOAD-DIR*::../bin/muscle-osx-arm64.v5.3 ::opts:: ; elif ( uname -a | grep "^Linux" | grep "x86_64" ); then ::*LOAD-DIR*::../bin/muscle-linux-x86.v5.3 ::opts:: ; else ::cmd:: ::opts:: ; fi
+    <opts>
+        -align  ::in::
+        -output ::out::
+        ::opts-add::
+### NEED ##############################################################################
+    <out>
+        # output file
+    <in>
+        # input file
+RUN
+    <local>
+        ::*MAIN*::

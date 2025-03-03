@@ -1,0 +1,31 @@
++TOOL:hmmer
+ARGS
+### Optional ##############################################################################
+    <opts-add>
+        $(false)
+    <else>
+        cat ::*LOAD-DIR*::../hmmer.info.txt
+    <main>
+        ::cmd:: ::opts:: ::hmmin:: ::in::
+    <cmd>
+        hmmsearch
+    <opts-default>
+        e    1e-5
+        dome ::e::
+        cpu  4
+    <opts>
+        --tblout     ::out::     # (need)           output
+        --incE       ::e::       # (default: 1e-5)  e-value
+        --incdomE    ::dome::    # (default: =incE) domain's e-value
+        --cpu        ::cpu::     # (default: 4)     cpu threads
+        ::opts-add::
+    <out>
+        ::*WORKDIR*::out.taf.hmmer.tsv
+### NEED ##############################################################################
+    <hmmin>
+        # input hmm file
+    <in>
+        # input fasta file
+RUN
+    <container:taf-hmmer:docker.io/taffish/hmmer:latest>
+        ::*MAIN*::

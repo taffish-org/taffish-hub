@@ -1,0 +1,147 @@
++FLOW:rna-seq-analyse
+ARGS
+    <from>
+        0
+    <ifadj>
+        1
+    <pvalue>
+        0.05
+    <logfc>
+        1.5
+    <cpu>
+        64
+    <per>
+        1
+    <ids>
+        SRR191654  SRR191655  SRR191656  SRR191657
+    <all-dirs>
+        outdir     ::*WORKDIR*::out-rna-example/
+        raw-dir    ::outdir::raw-date/
+        sub-dir    ::outdir::0-sub-data/
+        qc-dir     ::outdir::1-fastqc/
+        trim-dir   ::outdir::2-trim_galore/
+        genome-dir ::outdir::genome/
+        STAR-dir   ::outdir::3-STAR/
+        temp-dir   ::outdir::.temp/
+        fC-dir     ::outdir::4-featureCounts/
+        R-dir      ::outdir::5-R
+    <genome-files>
+        genome-gtf  ::raw-dir::Homo_sapiens.GRCh38.109.gtf
+        genome-fa   ::raw-dir::Homo_sapiens.GRCh38.dna.primary_assembly.fa
+    <rin>
+        # 输入的用于差异基因分析的 R 文件
+        ::*LOAD-DIR*::diff-gene-analyse.R
+    <qc-opts>
+        -o ::qc-dir::
+        -t ::cpu::
+    <trim-opts>
+        --quality    20
+        --length     36
+        --output_dir ::trim-dir::
+    <STAR-genome-opts>
+        --runThreadN          ::cpu::
+        --runMode             genomeGenerate
+        --genomeDir           ::genome-dir::
+        --genomeFastaFiles    ::genome-fa::
+        --sjdbGTFfile         ::genome-gtf::
+        --sjdbOverhang        100
+    <STAR-opts>
+        --runThreadN        ::cpu::
+        --genomeDir         ::genome-dir::
+        --readFilesIn       ::trim-dir::\$id.sub_trimmed.fq
+        --outFileNamePrefix ::STAR-dir::\$id.sub.
+        --outTmpDir         ::temp-dir::\$id.temp
+        --outSAMtype BAM SortedByCoordinate
+    <fC-in>
+        ::STAR-dir::*.Aligned.sortedByCoord.out.bam
+    <fC-opts>
+        -T ::cpu::
+        -a ::genome-gtf::
+        -o ::fC-dir::gene_counts.txt
+RUN
+    <sh-log-step$::from:::auto-flow>
+        set -e
+        mkdir -p ::outdir::
+        cd ::outdir::
+########################################
+### (1-2) 获取数据
+########################################
+<<< 1-sra-tools:fasterq-dump-获取数据
+        mkdir -p ::raw-dir::
+        for id in ::ids::
+        do
+            taf-sra-tools fasterq-dump \$id
+        done
+        wget ftp://ftp.ensembl.org/pub/release-109/gtf/homo_sapiens/Homo_sapiens.GRCh38.109.gtf.gz
+        wget ftp://ftp.ensembl.org/pub/release-109/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz
+        gunzip Homo_sapiens.GRCh38.109.gtf.gz
+        gunzip Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz
+>>>
+<<< 2-seqtk-数据筛选(用于演示)
+    mkdir -p ::sub-dir::
+    for id in ::ids:: ; do
+        if [ "::per::" = "1" ] ; then
+            cp ::raw-dir::$id.fastq ::sub-dir::$id.sub.fastq
+        else
+            taf-seqtk --cmd sample --in ::raw-dir::\$id.fastq ::per:: --out ::sub-dir::\$id.sub.fastq
+        fi
+    done
+>>>
+########################################
+### (3) fastqc
+########################################
+<<< 3-fastqc-质量控制
+    mkdir -p ::qc-dir::
+    cd ::qc-dir::
+    for id in ::ids::
+    do
+        taf-fastqc fastqc ::qc-opts:: ::sub-dir::\$id.sub.fastq
+    done
+>>>
+########################################
+### (4) 去接头 & 质量过滤 trim_galore
+########################################
+<<< 4-trim_galore-去接头&质量过滤
+    mkdir -p ::trim-dir::
+    cd ::trim-dir::
+    for id in ::ids::
+    do
+        taf-trim_galore trim_galore ::trim-opts:: ::sub-dir::\$id.sub.fastq
+    done
+>>>
+########################################
+### (5-6) 序列比对 STAR
+########################################
+<<< 5-STAR-构建参考基因组库
+    mkdir -p ::genome-dir::
+    cd ::genome-dir::
+    taf-STAR ::STAR-genome-opts::
+>>>
+<<< 6-STAR-序列比对
+    mkdir -p ::STAR-dir::
+    cd ::STAR-dir::
+    rm -rf ::temp-dir::
+    mkdir -p ::temp-dir::
+    for id in ::ids::
+    do
+        ulimit -n 65536
+        taf-STAR ::STAR-opts::
+    done
+>>>
+########################################
+### (7) 表达定量 featureCounts
+########################################
+<<< 7-featureCounts-表达定量
+    mkdir -p ::fC-dir::
+    cd ::fC-dir::
+    taf-subread featureCounts ::fC-opts:: ::fC-in::
+    temp_index_for_cut=7
+>>>
+########################################
+### (8) 基因差异表达分析(调用 R 包)
+########################################
+<<< 8-R-基因差异表达分析(调用R包 <- ::rin::)
+    mkdir -p ::R-dir::
+    cd ::R-dir::
+    taf-bior-rna --in ::rin:: ::fC-dir::gene_counts.txt ::R-dir:: ::pvalue:: ::logfc:: ::ifadj::
+>>>

@@ -1,0 +1,28 @@
+# 从 hic 矩阵文件获取 AB 区室数据
++TOOL:juicer
+ARGS
+    <chars>
+        # chromations: 1-22 + X Y
+    <IN>
+        ::in::
+    <OUT>
+        ::out::/1-ab
+    <java-opts>
+        ::java-opts::
+    <tool>
+        eigenvector
+    <tool-opts>
+        normalization  KR
+        BP-FRAG        BP
+        resolution     1000000
+    <files>
+        juicer-file  /root/juicer/juicer::juicer-version::.jar
+RUN
+    <local>
+        mkdir ::OUT::
+    <::run-set::>
+        for chr in ::chrs::
+        do
+            echo "(AB: chr$chr ...)"
+            java ::java-opts:: -jar ::juicer-file:: ::tool:: ::normalization:: ::IN:: chr$chr ::BP-FRAG:: ::resolution:: ::OUT::/ab_chr$chr.txt
+        done

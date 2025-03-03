@@ -1,0 +1,34 @@
+# 从 hic 矩阵文件获取 TAD 数据
++TOOL:juicer
+LOAD
+    <args>
+        ../juicer.taf
+ARGS
+    <IN>
+        ::in::
+    <OUT>
+        ::out::/2-tad
+    <java-opts>
+        ::java-opts::
+    <tool>
+        arrowhead
+    <r>
+        25000
+    <k>
+        KR
+    <cpu>
+        ::cpu::
+    <tool-opts>
+#       --help            # 帮助
+#       -c        1       # 染色体                    <String(s)>
+#       -m                # 沿对角线的滑动窗口的大小  <int>
+        -r        ::r::   # 运行 Call TAD 时的分辨率  <int>
+        -k        ::k::   # 规范化                    <NONE/VC/VC_SQRT/KR>
+        --threads ::cpu:: # 要使用的线程数量          <int>
+    <files>
+        juicer-file  /root/juicer/juicer::juicer-version::.jar
+RUN
+    <local>
+        mkdir ::OUT::
+    <::run-set::>
+        java ::java-opts:: -jar ::juicer-file:: ::tool:: ::tool-opts:: ::IN:: ::OUT::

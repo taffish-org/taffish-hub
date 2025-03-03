@@ -1,0 +1,26 @@
++TOOL:hanky-lisp
+ARGS
+### Optional ##############################################################################
+    <else>
+        cat ::*LOAD-DIR*::../hanky-lisp.info.txt
+    <opts-add>
+        $(false)
+    <cmd>
+        hanky-lisp
+    <main>
+        ::cmd:: ::opts::
+    <opts>
+        $(if [ "::load::"    = "false" ]; then false; else echo '--load   ::load::'  ; fi)
+        $(if [ "::run::"     = "false" ]; then false; else echo '--script ::run::'   ; fi)
+        $(if [ "::script::"  = "false" ]; then false; else echo '--script ::script::'; fi)
+        ::opts-add::
+### NEED ##############################################################################
+    <load>
+        false  # lisp file for load
+    <run>
+        false  # lisp file for run
+    <script>
+        false  # lisp file for script
+RUN
+    <container:taf-hanky-lisp:docker.io/taffish/hanky-lisp:latest>
+        ::*MAIN*::

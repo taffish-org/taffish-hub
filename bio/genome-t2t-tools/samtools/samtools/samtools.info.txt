@@ -1,0 +1,9 @@
+# <samtools:1.21 | KaiyuanHan | 2025-01-09>
+ARGS
+    <else>
+        samtools --help
+    <main>
+        samtools ::*APP-ARGS*::
+RUN
+    <container:taf-samtools:docker.io/taffish/samtools:latest>
+        ::*MAIN*::

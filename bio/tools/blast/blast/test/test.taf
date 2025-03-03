@@ -1,0 +1,12 @@
++FLOW:blast-get-IDs
+ARGS
+    <cmd>
+        blastp
+    <dbin>
+        ./db.fasta
+    <in>
+        ./in.fasta
+RUN
+    <auto-flow>
+        taf-blast --cmd ::cmd:: --dbin ::dbin:: --in ::in:: > /dev/null 2>&1
+        taf-blast cut -f 1 ./blast-out/out.::cmd::_matches_my-blast-db.txt \| sort \| uniq

@@ -1,0 +1,32 @@
++TOOL:juicer
+ARGS
+    <IN>
+        # xxx.hic # 在这里输入您需要解构的 hic 文件
+        ::in::
+    <chrs>
+        # chromatains :: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 X Y
+    <OUT>
+        ::out::/dump-out
+    <java-opts>
+        ::java-opts::
+    <tool>
+        dump
+    <tool-opts>
+        observed/oe         observed
+        NONE/VC/VC_SQRT/KR  NONE
+        BP/FRAG             BP 10000
+    <Genome-id/chomosome-size-file>
+        hg19
+    <files>
+        juicer-file  /root/juicer/juicer::juicer-version::.jar
+RUN
+    <local>
+        mkdir ::OUT::
+    <::run-set::>
+        for chr in ::chrs::
+        do 
+            echo "(hic=>txt: chr$chr-chr$chr ...)"
+            java ::java-opts:: -jar ::juicer-file:: ::tool:: ::observed/oe:: ::NONE/VC/VC_SQRT/KR:: ::IN:: chr$chr chr$chr ::BP/FRAG:: ::OUT::/hic_chr$chr-chr$chr.temp
+            sort -n ::OUT::/hic_chr$chr-chr$chr.temp > ::OUT::/hic_chr$chr-chr$chr.txt
+            rm ::OUT::/hic_chr$chr-chr$chr.temp
+        done

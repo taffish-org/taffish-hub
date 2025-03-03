@@ -1,0 +1,9 @@
+# <STAR:2.7.11b | KaiyuanHan | 2025-01-09>
+ARGS
+    <else>
+        STAR --help
+    <main>
+        STAR ::*APP-ARGS*::
+RUN
+    <container:taf-star:docker.io/taffish/star:latest>
+        ::*MAIN*::

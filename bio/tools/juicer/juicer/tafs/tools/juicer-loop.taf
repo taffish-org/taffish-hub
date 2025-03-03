@@ -1,0 +1,40 @@
+# 从 hic 矩阵文件获取 loop 数据
++TOOL:juicer
+LOAD
+    <args>
+        ../juicer.taf
+ARGS
+    <IN>
+        ::in::
+    <OUT>
+        ::out::/3-loop
+    <java-opts>
+        ::java-opts::
+    <tool>
+        hiccups
+    <r>
+        25000
+    <k>
+        KR
+    <cpu>
+        ::cpu::
+    <tool-opts>
+#       --help            # 帮助
+        --cpu             # 使用 cpu 而不是 gpu 来进行运算
+#       -m                # <int>                传递给 GPU 的染色体内子矩阵的最大大小（必须是大于 40 的偶数，以防止运行 CUDA 内核出现问题）。上限将取决于您的 GPU。专用 GPU 应该能够毫无问题地使用 500、1000 或 2048 等值。集成 GPU 不太可能运行大于 90 或 100 的大小。矩阵大小不会影响结果，只会影响打嗝所需的时间。较大的值（使用专用 GPU）将运行得最快。
+#       -c        1       # <String(s)>          染色体
+        -r        ::r::   # <int(s)>              运行 Call TAD 时的分辨率，可以用逗号分隔
+        -k        ::k::   # <NONE/VC/VC_SQRT/KR>  规范化
+#       -f                # <int(s)>              FDR 值实际上对应于 max_q_val
+#       -p                # <int(s)>              用于在HiCCUPS中查找丰富像素的峰宽
+#       -i                # <int(s)>              用于在HiCCUPS中查找丰富像素的窗口宽度
+#       -p                # <floats>              合并不同分辨率的循环列表的阈值。必须给出四个值，用逗号分隔（例如 0.02、1.5、1.75、2）
+#       -d                # <int(s)>              用于将附近像素合并到质心的距离
+        --threads ::cpu:: # <int>                 要使用的线程数量
+    <files>
+        juicer-file  /root/juicer/juicer::juicer-version::.jar
+RUN
+    <local>
+        mkdir ::OUT::
+    <::run-set::>
+        java ::java-opts:: -jar ::juicer-file:: ::tool:: ::tool-opts:: ::IN:: ::OUT::

@@ -1,0 +1,9 @@
+# <sra-tools:3.1.1 | KaiyuanHan | 2025-01-10>
+ARGS
+    <else>
+        cat ::*LOAD-DIR*::../sra-tools.info.txt
+    <main>
+        ::cmd:: ::opts::
+RUN
+    <container:taf-sra-tools:docker.io/taffish/sra-tools:latest>
+        ::*MAIN*::

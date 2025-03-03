@@ -1,0 +1,28 @@
++TOOL:fishka
+ARGS
+    <dk-head>
+        deepseek-r1:
+    <p>
+        ::*LOAD-DIR*::PROMPT.txt
+    <b>
+        14
+    <prompt>
+        '$$cat ::p:: | tr -d '\n'$$'
+    <mod>
+        # ::dk-head::::b::b
+        fishka
+    <q>
+        做一个自我介绍吧！
+    <main>
+        ::q::
+    <else>
+        ::q::
+    <t>
+        0
+    <if-think>
+        $$if [ "::t::" = "0" ]; then echo "EOF | stdbuf -oL awk '/<\/think>/ {flag=1; next} flag'"; else echo "EOF"; fi$$
+RUN
+    <local>
+        ollama run ::mod::<<::if-think::
+            ::*MAIN*::
+        EOF

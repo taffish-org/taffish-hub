@@ -1,0 +1,34 @@
+# <juicer:2.20.00 | KaiyuanHan | 2025-01-07>
+### Optional ##############################################################################
+    <main>
+        mkdir -p ::out:: ;
+        taffish ::*LOAD-DIR*::tools/juicer-::cmd::.taf ::*APP-ARGS*:: ::opts:: ;
+    <opts>
+        --out             ::out::             # (default: ::*WORKDIR*::out-juicer)
+        --pre-out-dir     ::pre-out-dir::     # (default: ::the-out::/0-pre)
+        --pre-out         ::pre-out::         # (default: ::the-pre-out-dir::/pre-out.hic)
+        --run-container   ::run-container::   # (default: taf-juicer)
+        --run-set         ::run-set::         # (default: container:taf-juicer:docker.io/taffish/juicer:latest)
+        --juicer-version  ::juicer-version::  # (default: 2) 1=>1.22.01 ; 2=>2.20.00
+        --java-opts       ::java-opts::       # (default: -Xms1g -Xmx8g)
+        --chrs            ::chrs::            # (default: 1-22 + X Y)
+        --cpu             ::cpu::             # (default: 4) cpu threads
+        --in              ::in::              # (need) input: {pre-txt | hic}
+### NEED ##############################################################################
+    <genome-id>
+        # (may need when cmd=pre) chromations: {hg19|hg38|mm9|...}
+    <cmd>
+        # juicer command: {dump|pre|ab|tad|loop}
+    <in>
+        # input (txt for pre | hic for others)
+### RUN ##############################################################################
+    <auto-flow>
+        if [ "$(echo '::*APP-ARGS*::' | cut -c 1-2)" = "--" ] ; then
+            ::*MAIN*::
+        fi
+    <::run-set::>
+        if [ "$(echo '::*APP-ARGS*::' | cut -c 1-2)" = "--" ] ; then
+            :
+        else
+            ::*MAIN*::
+        fi

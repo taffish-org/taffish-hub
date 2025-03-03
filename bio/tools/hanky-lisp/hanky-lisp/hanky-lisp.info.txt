@@ -1,0 +1,21 @@
+# <hanky-lisp:1.0.0-alpha | KaiyuanHan | 2025-01-06>
+### Optional ##############################################################################
+    <cmd>
+        hanky-lisp
+    <main>
+        ::cmd:: ::opts::
+    <opts>
+        $(if [ "::load::"    = "false" ]; then false; else echo '--load   ::load::'  ; fi)
+        $(if [ "::run::"     = "false" ]; then false; else echo '--script ::run::'   ; fi)
+        $(if [ "::script::"  = "false" ]; then false; else echo '--script ::script::'; fi)
+        ::opts-add::
+### NEED ##############################################################################
+    <load>
+        false  # lisp file for load
+    <run>
+        false  # lisp file for run
+    <script>
+        false  # lisp file for script
+### RUN ##############################################################################
+    <container:taf-hanky-lisp:docker.io/taffish/hanky-lisp:latest>
+        ::*MAIN*::

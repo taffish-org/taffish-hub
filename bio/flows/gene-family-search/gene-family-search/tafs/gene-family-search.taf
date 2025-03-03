@@ -1,0 +1,97 @@
++FLOW:gene-family-search
+ARGS
+### Optional ##############################################################################
+# 1.(clean) ::in:: ==(cdhit)==> ::cdhit-out::
+    <cdhit-opts-default>
+        cdhit-in   ::in::
+        cdhit-out  ::outdir::/out.cdhit.fasta
+        cdhit-c    0.95
+        cdhit-T    ::cpu::
+        cdhit-M    0
+    <cdhit-opts>
+        --in   ::cdhit-in::   # (need <= ::in::) input fasta file
+        --out  ::cdhit-out::  # (default: ::outdir::/out.cdhit.fasta) output
+        --c    ::cdhit-c::    # (default: 0.95) threshold
+        --T    ::cdhit-T::    # (default: ::cpu:: => 4) cpu threads
+        --M    ::cdhit-M::    # (default: 0) memory
+# 2.(alignment)
+# 2.1(hmmer) ::cdhit-out:: ==(hmmer)==> ::hmm-out-raw:: ==(awk|cut)==> ::hmm-out-ids::
+    <hmmer-opts-default>
+        hmm-in       ::cdhit-out::
+        hmm-hmmin    ::hmmin::
+        hmm-out-raw  ::outdir::/out.hmmer.raw
+        hmm-e        1e-5
+        hmm-dome     ::hmm-e::
+        hmm-cpu      ::cpu::
+    <hmm-out-ids>
+        ::outdir::/out.hmmer.ids
+    <hmmer-opts>
+        --in     ::hmm-in::       # (default: ::cdhit-out::)
+        --hmmin  ::hmm-hmmin::    # (need <= ::hmmin::)
+        --out    ::hmm-out-raw::  # (default: ::outdir::/out.hmmer.raw)
+        --e      ::hmm-e::        # (default: 1e-5)         e-value
+        --dome   ::hmm-dome::     # (default: ::hmm-e::)    domain e-value
+        --cpu    ::hmm-cpu::      # (default: ::cpu:: => 4) cpu threads
+# 2.2(blast) ::cdhit-out:: ==(blast)==> ::blast-out-raw:: ==(awk|cut)==> ::blast-out-ids::
+    <blast-opts-default>
+        blast-in        ::cdhit-out::
+        blast-dbin      ::dbin::
+        blast-cmd       ::blast+::
+        blast-outdir    ::outdir::
+        blast-out-raw   ::outdir::/out.blast.raw
+        blast-e         1e-5
+        blast-cpu       ::cpu::
+        blast-outfmt    6
+    <blast-out-ids>
+        ::outdir::/out.blast.ids
+    <blast-identity>
+        40
+    <blast-opts>
+        --in       ::blast-in::       # (default: ::cdhit-out::)
+        --dbin     ::blast-dbin::     # (need <= ::dbin::)
+        --cmd      ::blast-cmd::      # (default: ::blast+:: => blastp)
+        --outdir   ::blast-outdir::   # (default: ::outdir::)
+        --out      ::blast-out-raw::  # (default: ::outdir::/out.blast.raw)
+        --evalue   ::blast-e::        # (default: 1e-5)
+        --threads  ::blast-cpu::      # (default: ::cpu:: => 4)
+        --outfmt   ::blast-outfmt::   # (default: 6)
+# 2.3(combine hmmer & blast) ::hmm-out-ids: + ::blast-out-ids:: ==(cat|sort|uniq)==> ::hmm-blast-ids::
+    <hmm-blast-ids>
+        ::outdir::/final.hmm-blast.ids  # hmm + blast => ids
+# 2.4(get-seqs-from-ids) ::hmm-blast-ids:: ==(get-seqs-from-ids)==> ::hmm-blast-seqs::
+    <ids2seqs-opts-default>
+        ids2seqs-seqs  ::cdhit-out::
+        ids2seqs-ids   ::hmm-blast-ids::
+        ids2seqs-out   ::hmm-blast-seqs::
+    <hmm-blast-seqs>
+        ::out::                   # hmm + blast => ids => fasta
+    <ids2seqs-opts>
+        --seqs ::ids2seqs-seqs::  # (default: ::cdhit-out::)
+        --ids  ::ids2seqs-ids::   # (default: ::hmm-blast-ids::)
+        --out  ::ids2seqs-out::   # (default: ::hmm-blast-seqs::)
+# some important sets
+    <outdir>
+        ::*WORKDIR*::out-gene-family-search
+    <out>
+        ::outdir::/final.hmm-blast.fasta    # hmm + blast => ids => fasta
+    <cpu>
+        4  # cpu threads, you can chose it by your computer cpu's number
+    <blast+>
+        blastp  # [blastn:DNA=>DNA-db] [blastp:Protain=>Protain-db] [blastx:DNA=>Protain-db] ...
+### NEED ##############################################################################
+    <hmmin>
+        # for hmmsearch, same gene family's hmm file in pfam database (.hmm)
+    <dbin>
+        # for building blast database, same gene family's fasta file in AT (.fasta)
+    <in>
+        # input genome's fasta file
+RUN
+    <auto-flow>
+        mkdir -p ::outdir::
+        taf-cdhit ::cdhit-opts::
+        taf-hmmer ::hmmer-opts::
+        grep -v "^\#" ::hmm-out-raw:: | cut -d' ' -f 1 | cut -f 1 > ::hmm-out-ids::
+        taf-blast ::blast-opts::
+        awk '$3 > ::blast-identity::' ::blast-out-raw:: | cut -f 1 | sort | uniq > ::blast-out-ids::
+        cat ::hmm-out-ids:: ::blast-out-ids:: | sort | uniq > ::hmm-blast-ids::
+        taf-get-seqs-from-ids ::ids2seqs-opts::

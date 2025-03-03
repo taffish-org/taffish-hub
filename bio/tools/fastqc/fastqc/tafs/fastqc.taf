@@ -1,0 +1,9 @@
++TOOL:fastqc
+ARGS
+    <else>
+        fastqc --help
+    <main>
+        fastqc ::*APP-ARGS*::
+RUN
+    <container:taf-fastqc:docker.io/taffish/fastqc:latest>
+        ::*MAIN*::
