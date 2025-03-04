@@ -1,1 +1,1 @@
-(("blast" "2.16.0"))
+(("blast" "https://github.com/HermitHan/blast"))
