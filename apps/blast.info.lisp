@@ -1,0 +1,6 @@
+((:name           "blast")
+ (:repo           "https://github.com/HermitHan/blast")
+ (:author         "KaiyuanHan")
+ (:latest-version "2.16.0" "2025-03-03")
+ (:dependencies)
+ (:versions       "2.16.0"))
