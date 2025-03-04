@@ -1,1 +1,2 @@
-(("blast" "https://github.com/HermitHan/blast"))
+(("blast" "HermitHan/blast")
+ ("cdhit" "HermitHan/cdhit"))
