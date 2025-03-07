@@ -1,7 +1,7 @@
-("blast" "HermitHan/blast")
-("cdhit" "HermitHan/cdhit")
-("hmmer" "HermitHan/hmmer")
-("get-seqs-from-ids" "HermitHan/get-seqs-from-ids")
-("gene-family-search" "HermitHan/gene-family-search")
+("blast" "taffish-org/blast")
+("cdhit" "taffish-org/cdhit")
+("hmmer" "taffish-org/hmmer")
+("get-seqs-from-ids"  "taffish-org/get-seqs-from-ids")
+("gene-family-search" "taffish-org/gene-family-search")
 
-("seqtk" "HermitHan/seqtk")
+("seqtk" "taffish-org/seqtk")
