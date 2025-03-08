@@ -1,3 +1,7 @@
+("debian"             "taffish-org/debian")
+("python"             "taffish-org/python")
+("sbcl"               "taffish-org/sbcl")
+
 ("blast"              "taffish-org/blast")
 ("cdhit"              "taffish-org/cdhit")
 ("hmmer"              "taffish-org/hmmer")
