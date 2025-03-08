@@ -10,3 +10,5 @@
 
 ("sra-tools" "taffish-org/sra-tools")
 ("seqtk"     "taffish-org/seqtk")
+
+("muscle" "taffish-org/muscle")
