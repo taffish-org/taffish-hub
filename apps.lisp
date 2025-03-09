@@ -3,6 +3,8 @@
 ("sbcl"               "taffish-org/sbcl")
 ("R"                  "taffish-org/R")
 
+("muscle"             "taffish-org/muscle")
+
 ("blast"              "taffish-org/blast")
 ("cdhit"              "taffish-org/cdhit")
 ("hmmer"              "taffish-org/hmmer")
@@ -15,5 +17,3 @@
 ("trim_galore"        "taffish-org/trim_galore")
 ("STAR"               "taffish-org/STAR")
 ("subread"            "taffish-org/subread")
-
-("muscle"             "taffish-org/muscle")
