@@ -12,5 +12,6 @@
 ("seqtk"       "taffish-org/seqtk")
 ("fastqc"      "taffish-org/fastqc")
 ("trim_galore" "taffish-org/trim_galore")
+("STAR"        "taffish-org/STAR")
 
 ("muscle" "taffish-org/muscle")
