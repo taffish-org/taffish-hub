@@ -8,8 +8,9 @@
 ("get-seqs-from-ids"  "taffish-org/get-seqs-from-ids")
 ("gene-family-search" "taffish-org/gene-family-search")
 
-("sra-tools" "taffish-org/sra-tools")
-("seqtk"     "taffish-org/seqtk")
-("fastqc"    "taffish-org/fastqc")
+("sra-tools"   "taffish-org/sra-tools")
+("seqtk"       "taffish-org/seqtk")
+("fastqc"      "taffish-org/fastqc")
+("trim_galore" "taffish-org/trim_galore")
 
 ("muscle" "taffish-org/muscle")
