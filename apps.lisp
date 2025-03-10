@@ -6,6 +6,7 @@
 ("muscle"             "taffish-org/muscle")
 ("MCScanX"            "taffish-org/MCScanX")
 ("uniprot-idmapping"  "taffish-org/uniprot-idmapping")
+("juicer"             "taffish-org/juicer")
 
 ("blast"              "taffish-org/blast")
 ("cdhit"              "taffish-org/cdhit")
