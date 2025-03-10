@@ -20,3 +20,6 @@
 ("trim_galore"        "taffish-org/trim_galore")
 ("STAR"               "taffish-org/STAR")
 ("subread"            "taffish-org/subread")
+;;("rna-seq")
+
+("bedtools"           "taffish-org/bedtools")
