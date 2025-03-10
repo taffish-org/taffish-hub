@@ -4,6 +4,8 @@
 ("R"                  "taffish-org/R")
 
 ("muscle"             "taffish-org/muscle")
+("MCScanX"            "taffish-org/MCScanX")
+("uniprot-idmapping"  "taffish-org/uniprot-idmapping")
 
 ("blast"              "taffish-org/blast")
 ("cdhit"              "taffish-org/cdhit")
