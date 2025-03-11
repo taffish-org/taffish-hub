@@ -23,3 +23,4 @@
 ;;("rna-seq")
 
 ("bedtools"           "taffish-org/bedtools")
+("samtools"           "taffish-org/samtools")
