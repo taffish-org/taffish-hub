@@ -24,3 +24,5 @@
 
 ("bedtools"           "taffish-org/bedtools")
 ("samtools"           "taffish-org/samtools")
+("bowtie2"            "taffish-org/bowtie2")
+("fastp"              "taffish-org/fastp")
