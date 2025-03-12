@@ -34,3 +34,4 @@
 ;;;single cell
 ("kallisto"           "taffish-org/kallisto")
 ("bustools"           "taffish-org/bustools")
+("hisat2"             "taffish-org/hisat2")
