@@ -33,3 +33,4 @@
 
 ;;;single cell
 ("kallisto"           "taffish-org/kallisto")
+("bustools"           "taffish-org/bustools")
