@@ -31,7 +31,8 @@
 ("bowtie2"            "taffish-org/bowtie2")
 ("fastp"              "taffish-org/fastp")
 
-;;;single cell
+;;others
 ("kallisto"           "taffish-org/kallisto")
 ("bustools"           "taffish-org/bustools")
 ("hisat2"             "taffish-org/hisat2")
+("mafft"              "taffish-org/mafft")
