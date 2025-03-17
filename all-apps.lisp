@@ -177,4 +177,17 @@ Graph-based alignment (Hierarchical Graph FM index)
 
 Multiple alignment program for amino acid or nucleotide sequences.")
 ("clustal-omega" "taffish-org/clustal-omega"
- "aba647ee26cf9932c7e5ad8af6029b8d2b235a21	refs/tags/v1.2.4" "")
+ "aba647ee26cf9932c7e5ad8af6029b8d2b235a21	refs/tags/v1.2.4"
+ "# taf-clustal-omega
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from http://www.clustal.org/omega/
+
+Clustal Omega is the latest addition to the Clustal family. It offers a significant increase in scalability over previous versions, allowing hundreds of thousands of sequences to be aligned in only a few hours. It will also make use of multiple processors, where present. In addition, the quality of alignments is superior to previous versions, as measured by a range of popular benchmarks.")
+("bwa" "taffish-org/bwa"
+ "717e903843fa5b9368ca95898c34111c78357161	refs/tags/v0.7.18" "# taf-bwa
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/lh3/bwa
+
+Burrow-Wheeler Aligner for short-read alignment (see minimap2 for long-read alignment).")
