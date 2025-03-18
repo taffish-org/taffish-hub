@@ -38,3 +38,4 @@
 ("mafft"              "taffish-org/mafft")
 ("clustal-omega"      "taffish-org/clustal-omega")
 ("bwa"                "taffish-org/bwa")
+("gatk"               "taffish-org/gatk")
