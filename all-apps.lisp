@@ -198,3 +198,10 @@ Burrow-Wheeler Aligner for short-read alignment (see minimap2 for long-read alig
 - This app is from https://github.com/broadinstitute/gatk
 
 Variant Discovery in High-Throughput Sequencing Data.")
+("salmon" "taffish-org/salmon"
+ "d13130da3c7c3e04874cffac0dd349cdcf8b5c6e	refs/tags/v1.10.3" "# taf-salmon
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/COMBINE-lab/salmon
+
+Highly-accurate & wicked fast transcript-level quantification from RNA-seq reads using selective alignment.")

@@ -39,3 +39,4 @@
 ("clustal-omega"      "taffish-org/clustal-omega")
 ("bwa"                "taffish-org/bwa")
 ("gatk"               "taffish-org/gatk")
+("salmon"             "taffish-org/salmon")
