@@ -6,6 +6,13 @@
  "e0c768f956afcb509e44410bf5f8de82aeb6a501	refs/tags/v2.5.2" "404: Not Found")
 ("R" "taffish-org/R"
  "1343743f111871dae8e244df555036e5670f6727	refs/tags/v4.4.3" "404: Not Found")
+("hello" "taffish-org/hello"
+ "fbf581402f6de57361a77c08bdaceb7cb01ee88b	refs/tags/v1.0.0" "# taf-hello
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is made by TAFFISH.
+
+Show hello by taf-debian-v12.")
 ("muscle" "taffish-org/muscle"
  "814ff2be0abea6b8d64ceb94bf8156b9e6d9e299	refs/tags/v5.3" "# taf-muscle
 

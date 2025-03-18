@@ -3,6 +3,7 @@
 ("python"             "taffish-org/python")
 ("sbcl"               "taffish-org/sbcl")
 ("R"                  "taffish-org/R")
+("hello"              "taffish-org/hello")
 
 ;;TOOLs
 ("muscle"             "taffish-org/muscle")
