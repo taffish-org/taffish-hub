@@ -226,3 +226,10 @@ Highly-accurate & wicked fast transcript-level quantification from RNA-seq reads
 - This app is from https://github.com/trinityrnaseq/trinityrnaseq
 
 Trinity RNA-Seq de novo transcriptome assembly.")
+("freebayes" "taffish-org/freebayes"
+ "c36694681ae9684bb767dff01f28a9df05fdbb22	refs/tags/v1.3.9" "# taf-freebayes
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/freebayes/freebayes
+
+Bayesian haplotype-based genetic polymorphism discovery and genotyping.")
