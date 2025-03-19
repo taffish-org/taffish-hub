@@ -29,6 +29,7 @@
 ;;;T2T
 ("bedtools"           "taffish-org/bedtools")
 ("samtools"           "taffish-org/samtools")
+("bcftools"           "taffish-org/bcftools")
 ("bowtie2"            "taffish-org/bowtie2")
 ("fastp"              "taffish-org/fastp")
 
@@ -41,3 +42,4 @@
 ("bwa"                "taffish-org/bwa")
 ("gatk"               "taffish-org/gatk")
 ("salmon"             "taffish-org/salmon")
+("Trinity"            "taffish-org/Trinity")

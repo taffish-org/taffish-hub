@@ -133,12 +133,19 @@ The Subread software package is a tool kit for processing next-gen sequencing da
 
 bedtools - the swiss army knife for genome arithmetic")
 ("samtools" "taffish-org/samtools"
- "429ffa924361466c2588b12cd9aa7916f58b8d94	refs/tags/v1.21" "# taf-samtools
+ "74f344d0b20cad84ef0a583b1e490bef3dca74b0	refs/tags/v1.21" "# taf-samtools
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
 - This app is from https://github.com/samtools/samtools
 
 Tools (written in C using htslib) for manipulating next-generation sequencing data.")
+("bcftools" "taffish-org/bcftools"
+ "7af41cae6c6fb4dc4d16c610b66b0439aa8f2343	refs/tags/v1.21" "# taf-bcftools
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/samtools/bcftools
+
+bcftools - utilities for variant calling and manipulating VCFs and BCFs.")
 ("bowtie2" "taffish-org/bowtie2"
  "db33c9723668ef76f21a43b233fcdc30a254a666	refs/tags/v2.5.4" "# taf-bowtie2
 
@@ -212,3 +219,10 @@ Variant Discovery in High-Throughput Sequencing Data.")
 - This app is from https://github.com/COMBINE-lab/salmon
 
 Highly-accurate & wicked fast transcript-level quantification from RNA-seq reads using selective alignment.")
+("Trinity" "taffish-org/Trinity"
+ "9e75dda72b4280661cfdf91b2bb3a85a7c629ddb	refs/tags/v2.15.2" "# taf-Trinity
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/trinityrnaseq/trinityrnaseq
+
+Trinity RNA-Seq de novo transcriptome assembly.")
