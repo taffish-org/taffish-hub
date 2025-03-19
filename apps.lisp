@@ -43,3 +43,4 @@
 ("gatk"               "taffish-org/gatk")
 ("salmon"             "taffish-org/salmon")
 ("Trinity"            "taffish-org/Trinity")
+("freebayes"          "taffish-org/freebayes")
