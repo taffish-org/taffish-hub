@@ -239,7 +239,7 @@ Trinity RNA-Seq de novo transcriptome assembly.")
 
 Bayesian haplotype-based genetic polymorphism discovery and genotyping.")
 ("pymol" "taffish-org/pymol"
- "df6c15a3916d237a1edf6095ebfc45c589f30a1a	refs/tags/v3.1.0" "# taf-pymol
+ "868a6e3901ba0bae66d1b69b798a504b6b5c0513	refs/tags/v3.1.0" "# taf-pymol
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
 - This app is from https://github.com/schrodinger/pymol-open-source
