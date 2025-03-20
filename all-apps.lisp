@@ -1,7 +1,12 @@
 ("debian" "taffish-org/debian"
  "de7d99272d27a8e30b5b01889ac5c06889b41ae1	refs/tags/v12" "404: Not Found")
 ("python" "taffish-org/python"
- "7ee0abc69392bf88bf93fc28b7e1845d05ba7bbe	refs/tags/v3.13.2" "404: Not Found")
+ "7ee0abc69392bf88bf93fc28b7e1845d05ba7bbe	refs/tags/v3.13.2
+08757f22ff2e52f0f9e2cd62c692a0879d7cb205	refs/tags/v3.12.9
+bc938374839b8b69491c0011fdbbaa3af9091c0d	refs/tags/v3.11.11
+e9d5cfb3dd13cd9ea4d513d0c6688913cf68c390	refs/tags/v3.10.16
+b9f7c3abdb8c0ae67d2505e24c481a50cb370095	refs/tags/v3.9.21"
+ "404: Not Found")
 ("sbcl" "taffish-org/sbcl"
  "e0c768f956afcb509e44410bf5f8de82aeb6a501	refs/tags/v2.5.2" "404: Not Found")
 ("R" "taffish-org/R"
