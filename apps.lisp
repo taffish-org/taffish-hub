@@ -46,3 +46,4 @@
 ("freebayes"          "taffish-org/freebayes")
 ("pymol"              "taffish-org/pymol")
 ("hifiasm"            "taffish-org/hifiasm")
+("haphic"             "taffish-org/haphic")

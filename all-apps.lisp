@@ -246,9 +246,16 @@ Bayesian haplotype-based genetic polymorphism discovery and genotyping.")
 
 PyMOL is a source-available molecular visualization system created by Warren Lyford DeLano.")
 ("hifiasm" "taffish-org/hifiasm"
- "67fb14a5ac633a0afe9672b6e6f76fe3fac6621f	refs/tags/v0.25.0" "# taf-hifiasm
+ "c3d01b6375d41baff06f5e2d8b4ccfed4e969ec0	refs/tags/v0.25.0" "# taf-hifiasm
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
 - This app is from https://github.com/chhylp123/hifiasm
 
 Hifiasm: a haplotype-resolved assembler for accurate Hifi reads.")
+("haphic" "taffish-org/haphic"
+ "41630ae02aa833cd8298c0ebaa314b646225716d	refs/tags/v1.0.6" "# taf-haphic
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/zengxiaofei/HapHiC
+
+HapHiC: a fast, reference-independent, allele-aware scaffolding tool based on Hi-C data")
