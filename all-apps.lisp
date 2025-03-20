@@ -238,3 +238,10 @@ Trinity RNA-Seq de novo transcriptome assembly.")
 - This app is from https://github.com/freebayes/freebayes
 
 Bayesian haplotype-based genetic polymorphism discovery and genotyping.")
+("pymol" "taffish-org/pymol"
+ "df6c15a3916d237a1edf6095ebfc45c589f30a1a	refs/tags/v3.1.0" "# taf-pymol
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/schrodinger/pymol-open-source
+
+PyMOL is a source-available molecular visualization system created by Warren Lyford DeLano.")
