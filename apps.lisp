@@ -45,3 +45,4 @@
 ("Trinity"            "taffish-org/Trinity")
 ("freebayes"          "taffish-org/freebayes")
 ("pymol"              "taffish-org/pymol")
+("hifiasm"            "taffish-org/hifiasm")
