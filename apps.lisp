@@ -49,3 +49,4 @@
 ("hifiasm"            "taffish-org/hifiasm")
 ("haphic"             "taffish-org/haphic")
 ("autodock-vina"      "taffish-org/autodock-vina")
+("gromacs"            "taffish-org/gromacs")

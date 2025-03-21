@@ -256,17 +256,24 @@ PyMOL is a source-available molecular visualization system created by Warren Lyf
 
 Hifiasm: a haplotype-resolved assembler for accurate Hifi reads.")
 ("haphic" "taffish-org/haphic"
- "9b50f109ad363a4735a4d1a93bfaad7e399040ed	refs/tags/v1.0.6" "# taf-haphic
+ "bd3066f6bdbfb177bf99541618349682ecb962f2	refs/tags/v1.0.6" "# taf-haphic
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
 - This app is from https://github.com/zengxiaofei/HapHiC
 
 HapHiC: a fast, reference-independent, allele-aware scaffolding tool based on Hi-C data")
 ("autodock-vina" "taffish-org/autodock-vina"
- "a3f99f2b89259c11c86e0613c5d4609d35f1a468	refs/tags/v1.2.7"
+ "291c478eff742d831d757f75fb28b0a8cea643a3	refs/tags/v1.2.7"
  "# taf-autodock-vina
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
 - This app is from https://github.com/ccsb-scripps/AutoDock-Vina
 
-AutoDock Vina is one of the fastest and most widely used open-source docking engines.")
+AutoDock Vina is one of the fastest and most widely used open-source docking engines. It is a turnkey computational docking program that is based on a simple scoring function and rapid gradient-optimization conformational search. It was originally designed and implemented by Dr. Oleg Trott in the Molecular Graphics Lab, and it is now being maintained and develop by the Forli Lab at The Scripps Research Institute.")
+("gromacs" "taffish-org/gromacs"
+ "f92d32563c0c07a7d4a5b349bd0cbcf144ae4d4f	refs/tags/v2025.1" "# taf-gromacs
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/gromacs/gromacs
+
+A free and open-source software suite for high-performance molecular dynamics and output analysis.")
