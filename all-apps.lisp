@@ -256,7 +256,7 @@ PyMOL is a source-available molecular visualization system created by Warren Lyf
 
 Hifiasm: a haplotype-resolved assembler for accurate Hifi reads.")
 ("haphic" "taffish-org/haphic"
- "f23dd21099de238e8e08b95272b3194be5508545	refs/tags/v1.0.6" "# taf-haphic
+ "979edec386999c0439219fb8688188489e198c3c	refs/tags/v1.0.6" "# taf-haphic
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
 - This app is from https://github.com/zengxiaofei/HapHiC
