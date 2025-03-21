@@ -48,3 +48,4 @@
 ("pymol"              "taffish-org/pymol")
 ("hifiasm"            "taffish-org/hifiasm")
 ("haphic"             "taffish-org/haphic")
+("autodock-vina"      "taffish-org/autodock-vina")

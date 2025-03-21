@@ -256,9 +256,17 @@ PyMOL is a source-available molecular visualization system created by Warren Lyf
 
 Hifiasm: a haplotype-resolved assembler for accurate Hifi reads.")
 ("haphic" "taffish-org/haphic"
- "979edec386999c0439219fb8688188489e198c3c	refs/tags/v1.0.6" "# taf-haphic
+ "9b50f109ad363a4735a4d1a93bfaad7e399040ed	refs/tags/v1.0.6" "# taf-haphic
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
 - This app is from https://github.com/zengxiaofei/HapHiC
 
 HapHiC: a fast, reference-independent, allele-aware scaffolding tool based on Hi-C data")
+("autodock-vina" "taffish-org/autodock-vina"
+ "a3f99f2b89259c11c86e0613c5d4609d35f1a468	refs/tags/v1.2.7"
+ "# taf-autodock-vina
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/ccsb-scripps/AutoDock-Vina
+
+AutoDock Vina is one of the fastest and most widely used open-source docking engines.")
