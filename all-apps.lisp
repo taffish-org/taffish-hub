@@ -11,6 +11,9 @@ b9f7c3abdb8c0ae67d2505e24c481a50cb370095	refs/tags/v3.9.21"
  "e0c768f956afcb509e44410bf5f8de82aeb6a501	refs/tags/v2.5.2" "404: Not Found")
 ("R" "taffish-org/R"
  "1343743f111871dae8e244df555036e5670f6727	refs/tags/v4.4.3" "404: Not Found")
+("intel-oneapi" "taffish-org/intel-oneapi"
+ "6fd5aef4c550c558d3c62ec8ce55b94466854583	refs/tags/v2025.0.2-0-devel-ubuntu24.04"
+ "404: Not Found")
 ("hello" "taffish-org/hello"
  "fbf581402f6de57361a77c08bdaceb7cb01ee88b	refs/tags/v1.0.0" "# taf-hello
 
@@ -253,7 +256,7 @@ PyMOL is a source-available molecular visualization system created by Warren Lyf
 
 Hifiasm: a haplotype-resolved assembler for accurate Hifi reads.")
 ("haphic" "taffish-org/haphic"
- "41630ae02aa833cd8298c0ebaa314b646225716d	refs/tags/v1.0.6" "# taf-haphic
+ "f23dd21099de238e8e08b95272b3194be5508545	refs/tags/v1.0.6" "# taf-haphic
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
 - This app is from https://github.com/zengxiaofei/HapHiC

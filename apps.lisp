@@ -3,6 +3,7 @@
 ("python"             "taffish-org/python")
 ("sbcl"               "taffish-org/sbcl")
 ("R"                  "taffish-org/R")
+("intel-oneapi"       "taffish-org/intel-oneapi")
 ("hello"              "taffish-org/hello")
 
 ;;TOOLs
