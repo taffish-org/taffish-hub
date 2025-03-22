@@ -49,4 +49,5 @@
 ("hifiasm"            "taffish-org/hifiasm")
 ("haphic"             "taffish-org/haphic")
 ("autodock-vina"      "taffish-org/autodock-vina")
+("rosetta"            "taffish-org/rosetta")
 ("gromacs"            "taffish-org/gromacs")
