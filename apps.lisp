@@ -51,3 +51,4 @@
 ("autodock-vina"      "taffish-org/autodock-vina")
 ("rosetta"            "taffish-org/rosetta")
 ("gromacs"            "taffish-org/gromacs")
+("MMseqs2"            "taffish-org/MMseqs2")

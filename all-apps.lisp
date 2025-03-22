@@ -284,3 +284,10 @@ Rosetta has been at the forefront of computational biology, offering groundbreak
 - This app is from https://github.com/gromacs/gromacs
 
 A free and open-source software suite for high-performance molecular dynamics and output analysis.")
+("MMseqs2" "taffish-org/MMseqs2"
+ "4f2d8e6ea93151d7db606f5c79c4b7d4761e9a33	refs/tags/v17" "# taf-MMseqs2
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/soedinglab/MMseqs2
+
+MMseqs2: ultra fast and sensitive search and clustering suite")
