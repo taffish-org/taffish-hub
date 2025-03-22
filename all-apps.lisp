@@ -279,7 +279,7 @@ AutoDock Vina is one of the fastest and most widely used open-source docking eng
 
 Rosetta has been at the forefront of computational biology, offering groundbreaking capabilities in the modeling, design and analysis of protein structures.")
 ("gromacs" "taffish-org/gromacs"
- "f92d32563c0c07a7d4a5b349bd0cbcf144ae4d4f	refs/tags/v2025.1" "# taf-gromacs
+ "16133b40c045081327b77bebe0b292e6575e13ab	refs/tags/v2025.1" "# taf-gromacs
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
 - This app is from https://github.com/gromacs/gromacs
@@ -292,3 +292,10 @@ A free and open-source software suite for high-performance molecular dynamics an
 - This app is from https://github.com/soedinglab/MMseqs2
 
 MMseqs2: ultra fast and sensitive search and clustering suite")
+("foldseek" "taffish-org/foldseek"
+ "c91521cec9d8d2171510014b1601fbeebbf1ffb0	refs/tags/v10" "# taf-foldseek
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/steineggerlab/foldseek
+
+Foldseek enables fast and sensitive comparisons of large structure sets.")

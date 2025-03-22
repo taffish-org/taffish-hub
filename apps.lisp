@@ -52,3 +52,4 @@
 ("rosetta"            "taffish-org/rosetta")
 ("gromacs"            "taffish-org/gromacs")
 ("MMseqs2"            "taffish-org/MMseqs2")
+("foldseek"           "taffish-org/foldseek")
