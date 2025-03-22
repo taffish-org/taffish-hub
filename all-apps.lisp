@@ -271,8 +271,7 @@ HapHiC: a fast, reference-independent, allele-aware scaffolding tool based on Hi
 
 AutoDock Vina is one of the fastest and most widely used open-source docking engines. It is a turnkey computational docking program that is based on a simple scoring function and rapid gradient-optimization conformational search. It was originally designed and implemented by Dr. Oleg Trott in the Molecular Graphics Lab, and it is now being maintained and develop by the Forli Lab at The Scripps Research Institute.")
 ("rosetta" "taffish-org/rosetta"
- "a97be8aadb90ed9ec8a87b24b56751f77988862f	refs/tags/vml-387
-a41f7caa2df94e9e774596724df977a6a251eafc	refs/tags/v387.ml"
+ "a41f7caa2df94e9e774596724df977a6a251eafc	refs/tags/v387.ml"
  "# taf-rosetta
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
