@@ -7,6 +7,8 @@ bc938374839b8b69491c0011fdbbaa3af9091c0d	refs/tags/v3.11.11
 e9d5cfb3dd13cd9ea4d513d0c6688913cf68c390	refs/tags/v3.10.16
 b9f7c3abdb8c0ae67d2505e24c481a50cb370095	refs/tags/v3.9.21"
  "404: Not Found")
+("conda" "taffish-org/conda"
+ "a659fdd25a7dacd5515c5000cacd8feeedd3d547	refs/tags/v3.12" "404: Not Found")
 ("sbcl" "taffish-org/sbcl"
  "e0c768f956afcb509e44410bf5f8de82aeb6a501	refs/tags/v2.5.2" "404: Not Found")
 ("R" "taffish-org/R"
@@ -44,14 +46,14 @@ MCScanX: Multiple Collinearity Scan toolkit X version. The most popular synteny 
 
 A tool for connecting Uniprot.")
 ("juicer" "taffish-org/juicer"
- "490af26e54d42bf065a8c35fd82a3b92177b5916	refs/tags/v2.20.00" "# taf-juicer
+ "b1c05cd30422bf10c28e91cb4d68b5674579336b	refs/tags/v2.20.00" "# taf-juicer
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
 - This app is from https://github.com/aidenlab/juicer
 
 A One-Click System for Analyzing Loop-Resolution Hi-C Experiments.")
 ("blast" "taffish-org/blast"
- "fb4bb925d4d1404bd1c3f0d6b1698832a7b0972e	refs/tags/v2.16.0" "# taf-blast
+ "729ec93364b85c2284ecbb5dec11d57efc187d53	refs/tags/v2.16.0" "# taf-blast
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
 - This app is from docker.io/ncbi/blast(https://blast.ncbi.nlm.nih.gov/Blast.cgi).
@@ -271,8 +273,7 @@ HapHiC: a fast, reference-independent, allele-aware scaffolding tool based on Hi
 
 AutoDock Vina is one of the fastest and most widely used open-source docking engines. It is a turnkey computational docking program that is based on a simple scoring function and rapid gradient-optimization conformational search. It was originally designed and implemented by Dr. Oleg Trott in the Molecular Graphics Lab, and it is now being maintained and develop by the Forli Lab at The Scripps Research Institute.")
 ("rosetta" "taffish-org/rosetta"
- "a41f7caa2df94e9e774596724df977a6a251eafc	refs/tags/v387.ml"
- "# taf-rosetta
+ "a41f7caa2df94e9e774596724df977a6a251eafc	refs/tags/v387.ml" "# taf-rosetta
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
 - This app is from https://github.com/RosettaCommons/RoseTTAFold(https://hub.docker.com/r/rosettacommons/rosetta)

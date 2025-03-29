@@ -1,6 +1,7 @@
 ;;BASE
 ("debian"             "taffish-org/debian")
 ("python"             "taffish-org/python")
+("conda"              "taffish-org/conda")
 ("sbcl"               "taffish-org/sbcl")
 ("R"                  "taffish-org/R")
 ("intel-oneapi"       "taffish-org/intel-oneapi")
