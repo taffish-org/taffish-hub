@@ -8,7 +8,9 @@ e9d5cfb3dd13cd9ea4d513d0c6688913cf68c390	refs/tags/v3.10.16
 b9f7c3abdb8c0ae67d2505e24c481a50cb370095	refs/tags/v3.9.21"
  "404: Not Found")
 ("conda" "taffish-org/conda"
- "a659fdd25a7dacd5515c5000cacd8feeedd3d547	refs/tags/v3.12" "404: Not Found")
+ "466994620aa00097595f898e3fdadf445793e012	refs/tags/v24.9.2
+bcee65198024fe987e04c6110b00ce71052eda0d	refs/tags/v3.12"
+ "404: Not Found")
 ("sbcl" "taffish-org/sbcl"
  "e0c768f956afcb509e44410bf5f8de82aeb6a501	refs/tags/v2.5.2" "404: Not Found")
 ("R" "taffish-org/R"
@@ -300,3 +302,10 @@ MMseqs2: ultra fast and sensitive search and clustering suite")
 - This app is from https://github.com/steineggerlab/foldseek
 
 Foldseek enables fast and sensitive comparisons of large structure sets.")
+("esm-fold" "taffish-org/esm-fold"
+ "8994103df79f96d7377a02eacb3b37413cd2e550	refs/tags/v1.0.3" "# taf-esm-fold
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/facebookresearch/esm
+
+Evolutionary Scale Modeling (esm): Pretrained language models for proteins.")
