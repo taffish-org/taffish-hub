@@ -56,3 +56,4 @@
 ("foldseek"           "taffish-org/foldseek")
 ("esm-fold"           "taffish-org/esm-fold")
 ("jellyfish"          "taffish-org/jellyfish")
+("genomescope"        "taffish-org/genomescope")

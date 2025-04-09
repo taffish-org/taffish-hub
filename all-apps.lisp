@@ -316,3 +316,10 @@ Evolutionary Scale Modeling (esm): Pretrained language models for proteins.")
 - This app is from https://github.com/gmarcais/Jellyfish
 
 A fast multi-threaded k-mer counter.")
+("genomescope" "taffish-org/genomescope"
+ "6625f6e122920136f93134a7c3db5ae94be29a94	refs/tags/v0.0.0" "# taf-genomescope
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com//schatzlab/genomescope
+
+Fast genome analysis from unassembled short reads")
