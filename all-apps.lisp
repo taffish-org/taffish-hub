@@ -309,3 +309,10 @@ Foldseek enables fast and sensitive comparisons of large structure sets.")
 - This app is from https://github.com/facebookresearch/esm
 
 Evolutionary Scale Modeling (esm): Pretrained language models for proteins.")
+("jellyfish" "taffish-org/jellyfish"
+ "261419caab5a9d0fec3c632ec774ef2d41c51090	refs/tags/v2.3.1" "# taf-jellyfish
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/gmarcais/Jellyfish
+
+A fast multi-threaded k-mer counter.")

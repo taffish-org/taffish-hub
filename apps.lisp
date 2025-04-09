@@ -55,3 +55,4 @@
 ("MMseqs2"            "taffish-org/MMseqs2")
 ("foldseek"           "taffish-org/foldseek")
 ("esm-fold"           "taffish-org/esm-fold")
+("jellyfish"          "taffish-org/jellyfish")
