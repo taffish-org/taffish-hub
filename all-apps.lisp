@@ -317,7 +317,7 @@ Evolutionary Scale Modeling (esm): Pretrained language models for proteins.")
 
 A fast multi-threaded k-mer counter.")
 ("genomescope" "taffish-org/genomescope"
- "c7ba8caf13403d61fd787c7bc133fab61e1114e0	refs/tags/v2.0.1
+ "5cd2725f18c86adfde4ed58a7b090cb9c49065d1	refs/tags/v2.0.1
 6625f6e122920136f93134a7c3db5ae94be29a94	refs/tags/v1.0
 6625f6e122920136f93134a7c3db5ae94be29a94	refs/tags/v0.0.0"
  "# taf-genomescope
