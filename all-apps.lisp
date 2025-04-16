@@ -317,9 +317,14 @@ Evolutionary Scale Modeling (esm): Pretrained language models for proteins.")
 
 A fast multi-threaded k-mer counter.")
 ("genomescope" "taffish-org/genomescope"
- "6625f6e122920136f93134a7c3db5ae94be29a94	refs/tags/v0.0.0" "# taf-genomescope
+ "c7ba8caf13403d61fd787c7bc133fab61e1114e0	refs/tags/v2.0.1
+6625f6e122920136f93134a7c3db5ae94be29a94	refs/tags/v1.0
+6625f6e122920136f93134a7c3db5ae94be29a94	refs/tags/v0.0.0"
+ "# taf-genomescope
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
-- This app is from https://github.com//schatzlab/genomescope
+- This app is from https://github.com/schatzlab/genomescope   (1.0)
+- This app is from https://github.com/tbenavi1/genomescope2.0 (2.0)
 
-Fast genome analysis from unassembled short reads")
+1.0: Fast genome analysis from unassembled short reads
+2.0: Reference-free profiling of polyploid genomes")
