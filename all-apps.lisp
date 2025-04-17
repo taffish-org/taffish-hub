@@ -349,3 +349,10 @@ C++ API & command-line toolkit for working with BAM data")
 - This app is from https://github.com/lh3/gfatools
 
 Tools for manipulating sequence graphs in the GFA and rGFA formats")
+("quast" "taffish-org/quast"
+ "9bb8848886b336b8dc96d9d97442346ea57f1388	refs/tags/v5.3.0" "# taf-quast
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/ablab/quast
+
+Genome assembly evaluation tool")

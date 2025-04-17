@@ -60,3 +60,4 @@
 ("kmc"                "taffish-org/kmc")
 ("bamtools"           "taffish-org/bamtools")
 ("gfatools"           "taffish-org/gfatools")
+("quast"              "taffish-org/quast")
