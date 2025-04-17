@@ -328,3 +328,10 @@ A fast multi-threaded k-mer counter.")
 
 1.0: Fast genome analysis from unassembled short reads
 2.0: Reference-free profiling of polyploid genomes")
+("kmc" "taffish-org/kmc"
+ "1954f302f912dfd3f4cc4a8d548148fdd9c3360f	refs/tags/v3.2.4" "# taf-kmc
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/refresh-bio/KMC
+
+Fast and frugal disk based k-mer counter")

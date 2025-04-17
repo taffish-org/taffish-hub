@@ -57,3 +57,4 @@
 ("esm-fold"           "taffish-org/esm-fold")
 ("jellyfish"          "taffish-org/jellyfish")
 ("genomescope"        "taffish-org/genomescope")
+("kmc"                "taffish-org/kmc")
