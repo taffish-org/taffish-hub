@@ -59,3 +59,4 @@
 ("genomescope"        "taffish-org/genomescope")
 ("kmc"                "taffish-org/kmc")
 ("bamtools"           "taffish-org/bamtools")
+("gfatools"           "taffish-org/gfatools")

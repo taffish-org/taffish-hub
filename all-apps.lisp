@@ -342,3 +342,10 @@ Fast and frugal disk based k-mer counter")
 - This app is from https://github.com/pezmaster31/bamtools
 
 C++ API & command-line toolkit for working with BAM data")
+("gfatools" "taffish-org/gfatools"
+ "a617f23a7d13b5b5704bc64a2d4139218c2d5743	refs/tags/v0.5" "# taf-gfatools
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/lh3/gfatools
+
+Tools for manipulating sequence graphs in the GFA and rGFA formats")
