@@ -335,3 +335,10 @@ A fast multi-threaded k-mer counter.")
 - This app is from https://github.com/refresh-bio/KMC
 
 Fast and frugal disk based k-mer counter")
+("bamtools" "taffish-org/bamtools"
+ "61509b3b9d7e7325e54fa04978dccce704d19601	refs/tags/v2.5.2" "# taf-bamtools
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/pezmaster31/bamtools
+
+C++ API & command-line toolkit for working with BAM data")

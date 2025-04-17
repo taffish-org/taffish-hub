@@ -58,3 +58,4 @@
 ("jellyfish"          "taffish-org/jellyfish")
 ("genomescope"        "taffish-org/genomescope")
 ("kmc"                "taffish-org/kmc")
+("bamtools"           "taffish-org/bamtools")
