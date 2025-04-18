@@ -246,7 +246,9 @@ Trinity RNA-Seq de novo transcriptome assembly.")
 
 Bayesian haplotype-based genetic polymorphism discovery and genotyping.")
 ("pymol" "taffish-org/pymol"
- "868a6e3901ba0bae66d1b69b798a504b6b5c0513	refs/tags/v3.1.0" "# taf-pymol
+ "e4eea3d6c00527ae7e708e57fcac7976eeb14a5b	refs/tags/v3.1.0.gui
+868a6e3901ba0bae66d1b69b798a504b6b5c0513	refs/tags/v3.1.0"
+ "# taf-pymol
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
 - This app is from https://github.com/schrodinger/pymol-open-source
@@ -350,7 +352,7 @@ C++ API & command-line toolkit for working with BAM data")
 
 Tools for manipulating sequence graphs in the GFA and rGFA formats")
 ("quast" "taffish-org/quast"
- "9bb8848886b336b8dc96d9d97442346ea57f1388	refs/tags/v5.3.0" "# taf-quast
+ "eaaf4fd183579710d7b460b0c1d3eaba5399f648	refs/tags/v5.3.0" "# taf-quast
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
 - This app is from https://github.com/ablab/quast
