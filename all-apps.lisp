@@ -25,6 +25,13 @@ bcee65198024fe987e04c6110b00ce71052eda0d	refs/tags/v3.12"
 - This app is made by TAFFISH.
 
 Show hello by taf-debian-v12.")
+("gui" "taffish-org/gui"
+ "21e5a16645764cd13dd0a5ca3c254ae41d937aa0	refs/tags/v1.0.0" "# taf-gui
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from VNC and noVNC.
+
+Use VNC and no VNC to support gui for taf apps.")
 ("muscle" "taffish-org/muscle"
  "814ff2be0abea6b8d64ceb94bf8156b9e6d9e299	refs/tags/v5.3" "# taf-muscle
 
@@ -246,7 +253,7 @@ Trinity RNA-Seq de novo transcriptome assembly.")
 
 Bayesian haplotype-based genetic polymorphism discovery and genotyping.")
 ("pymol" "taffish-org/pymol"
- "3fdece2dd002871711f2afcbad4d711f786c9e7d	refs/tags/v3.1.0.gui
+ "9637b27f11c73a730e689890014d05ee0f88dbf6	refs/tags/v3.1.0.gui
 868a6e3901ba0bae66d1b69b798a504b6b5c0513	refs/tags/v3.1.0"
  "# taf-pymol
 
@@ -426,7 +433,7 @@ A versatile pairwise aligner for genomic and spliced nucleotide sequences")
 
 A gap-closing software tool that uses long reads to enhance genome assembly.")
 ("juicebox" "taffish-org/juicebox"
- "627322e050381bbda4ba9cbc5e96aa71205aabd9	refs/tags/v3.1.4" "# taf-juicebox
+ "139b685a4158661506e463f786f0679c55f3001f	refs/tags/v3.1.4" "# taf-juicebox
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
 - This app is from https://github.com/aidenlab/JuiceboxGUI
