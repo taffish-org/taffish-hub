@@ -26,12 +26,61 @@ bcee65198024fe987e04c6110b00ce71052eda0d	refs/tags/v3.12"
 
 Show hello by taf-debian-v12.")
 ("gui" "taffish-org/gui"
- "21e5a16645764cd13dd0a5ca3c254ae41d937aa0	refs/tags/v1.0.0" "# taf-gui
+ "61f60dd2b6e41457454427a424947bddfaba4cba	refs/tags/v1.0.0" "# taf-gui
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
 - This app is from VNC and noVNC.
 
-Use VNC and no VNC to support gui for taf apps.")
+Use VNC and no VNC to support gui for taf apps.
+
+## gui:v1.0.0 -- Use gui in your browser (an examply by taf-juicebox:v3.1.4 [port :: 5802])
+
+For the gui mode, we do it together with [noVNC](https://github.com/novnc/noVNC) through VNC, which makes it possible to access the gui version of taf-apps through a browser, as shown in the following tutorials:
+
+### 1. Run the following command on the CLI:
+
+  ```bash
+  taf update
+  taf install -y gui  # or any gui-taf-app, such like taf-pymol, taf-juicebox, ...
+  # restart terminal or [$ source ~/.bashrc] or [$ source ~/.zshrc] ...
+  taf-gui --passwd 12345678 --port 5809
+  # --c only support docker and podman, chose yours              [default podman>docekr]
+  # --passwd will be used when you try to connect the gui        [default 12345678]
+  # --port will be used when you try to connect the gui          [default 5809]    # it will only be set once when you first run taf-gui
+  ```
+
+### 2. Check the output and the URL
+
+  Wait for the run to finish, check for errors, and if everything is fine, look at the end of the output, you can get a web address, for example:
+  
+  ```
+  >>> TAFFISH-GUI ===> http://localhost:5809/vnc.html <<<
+  ```
+
+  Copy the URL and open it in your browser to access taffish-gui:
+  
+  <img width=\"1446\" alt=\"image\" src=\"https://github.com/user-attachments/assets/ea6fab03-6ca5-4204-ad6f-b3b1fcf18eff\" />
+  
+### 3. Enter the password and enter the GUI interface (the password is the --passwd set at runtime, the default is 12345678)
+
+  <img width=\"1448\" alt=\"image\" src=\"https://github.com/user-attachments/assets/528e28e8-a082-4fd3-ae43-190b0497cbae\" />
+  
+### 4. Open the terminal in the GUI and enter the gui command to open your app by gui in the GUI interface
+
+  <img width=\"1449\" alt=\"image\" src=\"https://github.com/user-attachments/assets/fe2cd3d5-1a14-43ee-a3b7-42bd2bebe629\" />
+  
+### 5. Use juicebox-gui
+
+  <img width=\"1450\" alt=\"image\" src=\"https://github.com/user-attachments/assets/aeceff72-80ed-4cf9-b3c4-b77f851bd2e7\" />
+  
+  <img width=\"1449\" alt=\"image\" src=\"https://github.com/user-attachments/assets/65817b22-18f0-4b04-84d6-1337479362b3\" />
+  
+  <img width=\"1449\" alt=\"image\" src=\"https://github.com/user-attachments/assets/9a909b8e-34f8-4d1b-846e-18351df2cce0\" />
+  
+  Note:
+  - By default, the /root/ path in the container needs to be retrieved from the global path /home/$USER
+  - For the remote server, you can change the localhost in the URL to the server IP to access the taffish-gui on the remote server
+  - Only a single screen is created for the same port/container service, and different accesses share the same screen. If you want to start a new service, please open a new docker/podman container(use another user to run taf-gui) and select a new port")
 ("muscle" "taffish-org/muscle"
  "814ff2be0abea6b8d64ceb94bf8156b9e6d9e299	refs/tags/v5.3" "# taf-muscle
 
@@ -253,7 +302,7 @@ Trinity RNA-Seq de novo transcriptome assembly.")
 
 Bayesian haplotype-based genetic polymorphism discovery and genotyping.")
 ("pymol" "taffish-org/pymol"
- "9637b27f11c73a730e689890014d05ee0f88dbf6	refs/tags/v3.1.0.gui
+ "f86ce9ffcc4c30276924a7b7145fac3aced3ff24	refs/tags/v3.1.0.gui
 868a6e3901ba0bae66d1b69b798a504b6b5c0513	refs/tags/v3.1.0"
  "# taf-pymol
 
@@ -433,7 +482,7 @@ A versatile pairwise aligner for genomic and spliced nucleotide sequences")
 
 A gap-closing software tool that uses long reads to enhance genome assembly.")
 ("juicebox" "taffish-org/juicebox"
- "139b685a4158661506e463f786f0679c55f3001f	refs/tags/v3.1.4" "# taf-juicebox
+ "a3643fb14d22ef0c78b90ccfa61d5c11e7b091ea	refs/tags/v3.1.4" "# taf-juicebox
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
 - This app is from https://github.com/aidenlab/JuiceboxGUI
@@ -491,3 +540,10 @@ For the gui mode, we do it together with [noVNC](https://github.com/novnc/noVNC)
   - By default, the /root/ path in the container needs to be retrieved from the global path /home/$USER
   - For the remote server, you can change the localhost in the URL to the server IP to access the juicebox-gui on the remote server
   - Only a single screen is created for the same port/container service, and different accesses share the same screen. If you want to start a new service, please open a new docker/podman container(use another user to run taf-juicebox-v3.1.4) and select a new port")
+("busco" "taffish-org/busco"
+ "c895dd59efa3b9935a342c6631595b2d89f0c965	refs/tags/v5.8.2" "# taf-busco
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from docker.io/ezlabgva/busco
+
+BUSCO: Assessing Genomic Data Quality and Beyond")

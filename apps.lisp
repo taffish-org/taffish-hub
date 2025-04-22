@@ -65,3 +65,4 @@
 ("minimap2"           "taffish-org/minimap2")
 ("tgsgapcloser"       "taffish-org/tgsgapcloser")
 ("juicebox"           "taffish-org/juicebox")
+("busco"              "taffish-org/busco")
