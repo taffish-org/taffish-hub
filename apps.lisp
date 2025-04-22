@@ -61,3 +61,4 @@
 ("bamtools"           "taffish-org/bamtools")
 ("gfatools"           "taffish-org/gfatools")
 ("quast"              "taffish-org/quast")
+("minimap2"           "taffish-org/minimap2")
