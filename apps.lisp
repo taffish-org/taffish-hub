@@ -62,3 +62,4 @@
 ("gfatools"           "taffish-org/gfatools")
 ("quast"              "taffish-org/quast")
 ("minimap2"           "taffish-org/minimap2")
+("tgsgapcloser"       "taffish-org/tgsgapcloser")

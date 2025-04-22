@@ -418,3 +418,10 @@ Genome assembly evaluation tool")
 - This app is from https://github.com/lh3/minimap2
 
 A versatile pairwise aligner for genomic and spliced nucleotide sequences")
+("tgsgapcloser" "taffish-org/tgsgapcloser"
+ "22f96f102b22b709ba87443d92d1e6d430db1196	refs/tags/v1.2.1" "# taf-tgsgapcloser
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/BGI-Qingdao/TGS-GapCloser
+
+A gap-closing software tool that uses long reads to enhance genome assembly.")
