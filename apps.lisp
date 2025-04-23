@@ -68,3 +68,4 @@
 ("busco"              "taffish-org/busco")
 ("trf"                "taffish-org/trf")
 ("augustus"           "taffish-org/augustus")
+("EVidenceModeler"    "taffish-org/EVidenceModeler")

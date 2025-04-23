@@ -561,3 +561,11 @@ Tandem Repeats Finder: a program to analyze DNA sequences")
 - This app is from https://github.com/Gaius-Augustus/Augustus
 
 Genome annotation with AUGUSTUS")
+("EVidenceModeler" "taffish-org/EVidenceModeler"
+ "7e8f0dcde172b4aa738a395c7e94d28e16be3f11	refs/tags/v2.1.0"
+ "# taf-EVidenceModeler
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/EVidenceModeler/EVidenceModeler
+
+The EVidenceModeler (aka EVM) software combines ab intio gene predictions and protein and transcript alignments into weighted consensus gene structures.")
