@@ -562,10 +562,17 @@ Tandem Repeats Finder: a program to analyze DNA sequences")
 
 Genome annotation with AUGUSTUS")
 ("EVidenceModeler" "taffish-org/EVidenceModeler"
- "7e8f0dcde172b4aa738a395c7e94d28e16be3f11	refs/tags/v2.1.0"
+ "5c572fcb514d61dc487b2b8b874f2eb0c5a9ab23	refs/tags/v2.1.0"
  "# taf-EVidenceModeler
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
 - This app is from https://github.com/EVidenceModeler/EVidenceModeler
 
 The EVidenceModeler (aka EVM) software combines ab intio gene predictions and protein and transcript alignments into weighted consensus gene structures.")
+("RepeatMasker" "taffish-org/RepeatMasker"
+ "7f9a93397e328979493177cd75cc9b9636593bac	refs/tags/v4.1.8" "# taf-RepeatMasker
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://www.repeatmasker.org/
+
+RepeatMasker is a program that screens DNA sequences for interspersed repeats and low complexity DNA sequences.")
