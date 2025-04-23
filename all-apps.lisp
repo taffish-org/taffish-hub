@@ -547,3 +547,17 @@ For the gui mode, we do it together with [noVNC](https://github.com/novnc/noVNC)
 - This app is from docker.io/ezlabgva/busco
 
 BUSCO: Assessing Genomic Data Quality and Beyond")
+("trf" "taffish-org/trf"
+ "f5c09de47538bc246c2ac5d99561348f2a61a7a4	refs/tags/v4.09.1" "# taf-trf
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/Benson-Genomics-Lab/TRF
+
+Tandem Repeats Finder: a program to analyze DNA sequences")
+("augustus" "taffish-org/augustus"
+ "fafb97cceb70e64b5cc3614bf022d17e0891cdca	refs/tags/v3.5.0" "# taf-augustus
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/Gaius-Augustus/Augustus
+
+Genome annotation with AUGUSTUS")

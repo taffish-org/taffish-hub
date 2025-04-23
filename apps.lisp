@@ -66,3 +66,5 @@
 ("tgsgapcloser"       "taffish-org/tgsgapcloser")
 ("juicebox"           "taffish-org/juicebox")
 ("busco"              "taffish-org/busco")
+("trf"                "taffish-org/trf")
+("augustus"           "taffish-org/augustus")
