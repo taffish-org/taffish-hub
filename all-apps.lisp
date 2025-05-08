@@ -302,7 +302,7 @@ Trinity RNA-Seq de novo transcriptome assembly.")
 
 Bayesian haplotype-based genetic polymorphism discovery and genotyping.")
 ("pymol" "taffish-org/pymol"
- "f86ce9ffcc4c30276924a7b7145fac3aced3ff24	refs/tags/v3.1.0.gui
+ "9661e2499d0ce631a584f5a95f4ac5863d3cd31d	refs/tags/v3.1.0.gui
 868a6e3901ba0bae66d1b69b798a504b6b5c0513	refs/tags/v3.1.0"
  "# taf-pymol
 
@@ -364,7 +364,7 @@ For the gui mode, we do it together with [noVNC](https://github.com/novnc/noVNC)
   - For the remote server, you can change the localhost in the URL to the server IP to access the pymol-gui on the remote server
   - Only a single screen is created for the same port/container service, and different accesses share the same screen. If you want to start a new service, please open a new docker/podman container(use another user to run taf-pymol-v3.1.0.gui) and select a new port")
 ("hifiasm" "taffish-org/hifiasm"
- "c3d01b6375d41baff06f5e2d8b4ccfed4e969ec0	refs/tags/v0.25.0" "# taf-hifiasm
+ "8dd4240739936e56e43cdb475bcb7e8509d5c0fa	refs/tags/v0.25.0" "# taf-hifiasm
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
 - This app is from https://github.com/chhylp123/hifiasm
@@ -482,7 +482,7 @@ A versatile pairwise aligner for genomic and spliced nucleotide sequences")
 
 A gap-closing software tool that uses long reads to enhance genome assembly.")
 ("juicebox" "taffish-org/juicebox"
- "a3643fb14d22ef0c78b90ccfa61d5c11e7b091ea	refs/tags/v3.1.4" "# taf-juicebox
+ "0ef59eceea1d9395c5133bbb92b9b12a37b45f19	refs/tags/v3.1.4" "# taf-juicebox
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
 - This app is from https://github.com/aidenlab/JuiceboxGUI
@@ -562,7 +562,7 @@ Tandem Repeats Finder: a program to analyze DNA sequences")
 
 Genome annotation with AUGUSTUS")
 ("EVidenceModeler" "taffish-org/EVidenceModeler"
- "5c572fcb514d61dc487b2b8b874f2eb0c5a9ab23	refs/tags/v2.1.0"
+ "3bb39a56ceabb05cd89a63886812f1ab0d42099c	refs/tags/v2.1.0"
  "# taf-EVidenceModeler
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
@@ -576,3 +576,10 @@ The EVidenceModeler (aka EVM) software combines ab intio gene predictions and pr
 - This app is from https://www.repeatmasker.org/
 
 RepeatMasker is a program that screens DNA sequences for interspersed repeats and low complexity DNA sequences.")
+("samblaster" "taffish-org/samblaster"
+ "a2b7cd3919c5069b0fb5d4c59ca6622bce5348d8	refs/tags/v0.1.26" "# taf-samblaster
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/GregoryFaust/samblaster
+
+samblaster: a tool to mark duplicates and extract discordant and split reads from sam files.")

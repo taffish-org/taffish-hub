@@ -70,3 +70,4 @@
 ("augustus"           "taffish-org/augustus")
 ("EVidenceModeler"    "taffish-org/EVidenceModeler")
 ("RepeatMasker"       "taffish-org/RepeatMasker")
+("samblaster"         "taffish-org/samblaster")
