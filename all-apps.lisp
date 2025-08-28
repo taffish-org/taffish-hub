@@ -371,7 +371,7 @@ For the gui mode, we do it together with [noVNC](https://github.com/novnc/noVNC)
 
 Hifiasm: a haplotype-resolved assembler for accurate Hifi reads.")
 ("haphic" "taffish-org/haphic"
- "98fa6b9f81716cec8792d3325d0b699820ce7da3	refs/tags/v1.0.7
+ "8ca8cbe69df62297c81f8d6c5e9e0ebb0e9304ec	refs/tags/v1.0.7
 302c685b03fdab3fcfe9e0e9b871a4ff55b53512	refs/tags/v1.0.6-taf1
 db0085ac089a4f9af0e9dbe8c0057b1cef6ed455	refs/tags/v1.0.6"
  "# taf-haphic
@@ -393,7 +393,7 @@ AutoDock Vina is one of the fastest and most widely used open-source docking eng
  "a41f7caa2df94e9e774596724df977a6a251eafc	refs/tags/v387.ml" "# taf-rosetta
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
-- This app is from https://github.com/RosettaCommons/RoseTTAFold(https://hub.docker.com/r/rosettacommons/rosetta)
+- This app is from (https://github.com/RosettaCommons/RoseTTAFold) (https://hub.docker.com/r/rosettacommons/rosetta)
 
 Rosetta has been at the forefront of computational biology, offering groundbreaking capabilities in the modeling, design and analysis of protein structures.")
 ("gromacs" "taffish-org/gromacs"
@@ -587,3 +587,10 @@ RepeatMasker is a program that screens DNA sequences for interspersed repeats an
 - This app is from https://github.com/GregoryFaust/samblaster
 
 samblaster: a tool to mark duplicates and extract discordant and split reads from sam files.")
+("NGenomeSyn" "taffish-org/NGenomeSYN"
+ "bedb28d5eaf2d5d8a63bd63ed932fdd82cc6bca2	refs/tags/v1.43" "# taf-NGenomeSyn
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/hewm2008/NGenomeSyn
+
+Any Way to Show Multi genomic Synteny")
