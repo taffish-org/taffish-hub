@@ -594,3 +594,17 @@ samblaster: a tool to mark duplicates and extract discordant and split reads fro
 - This app is from https://github.com/hewm2008/NGenomeSyn
 
 Any Way to Show Multi genomic Synteny")
+("syri" "taffish-org/syri"
+ "0c3ca7080ac32b9f71334f978fd1d668c865c88a	refs/tags/v1.7.1" "# taf-syri
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/schneebergerlab/syri
+
+Synteny and Rearrangement Identifier")
+("plotsr" "taffish-org/plotsr"
+ "4d3fc7bba325781d8c29762f283d3bd7785d11fc	refs/tags/v1.1.1" "# taf-plotsr
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/schneebergerlab/plotsr
+
+Tool to plot synteny and structural rearrangements between genomes")
