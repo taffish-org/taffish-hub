@@ -615,3 +615,10 @@ Tool to plot synteny and structural rearrangements between genomes")
 - This app is from https://github.com/schneebergerlab/compleasm
 
 A genome completeness evaluation tool based on miniprot")
+("pandepth" "taffish-org/pandepth"
+ "0b0b956b3b7a43c2de7c9968cbf59ea57faf705f	refs/tags/v2.26" "# taf-pandepth
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/HuiyangYu/PanDepth
+
+An ultra-fast and efficient genomic tool for coverage calculation")

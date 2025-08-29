@@ -75,3 +75,4 @@
 ("syri"               "taffish-org/syri")
 ("plotsr"             "taffish-org/plotsr")
 ("compleasm"          "taffish-org/compleasm")
+("pandepth"           "taffish-org/pandepth")
