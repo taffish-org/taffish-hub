@@ -608,3 +608,10 @@ Synteny and Rearrangement Identifier")
 - This app is from https://github.com/schneebergerlab/plotsr
 
 Tool to plot synteny and structural rearrangements between genomes")
+("compleasm" "taffish-org/compleasm"
+ "2d48f6ace147d98baf23da2f8e66fe4c23ae2aa3	refs/tags/v0.2.7" "# taf-compleasm
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/schneebergerlab/compleasm
+
+A genome completeness evaluation tool based on miniprot")

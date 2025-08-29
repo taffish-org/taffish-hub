@@ -74,3 +74,4 @@
 ("NGenomeSyn"         "taffish-org/NGenomeSYN")
 ("syri"               "taffish-org/syri")
 ("plotsr"             "taffish-org/plotsr")
+("compleasm"          "taffish-org/compleasm")
