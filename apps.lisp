@@ -76,3 +76,4 @@
 ("plotsr"             "taffish-org/plotsr")
 ("compleasm"          "taffish-org/compleasm")
 ("pandepth"           "taffish-org/pandepth")
+("craq"               "taffish-org/craq")
