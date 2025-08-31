@@ -8,9 +8,7 @@ e9d5cfb3dd13cd9ea4d513d0c6688913cf68c390	refs/tags/v3.10.16
 b9f7c3abdb8c0ae67d2505e24c481a50cb370095	refs/tags/v3.9.21"
  "404: Not Found")
 ("conda" "taffish-org/conda"
- "466994620aa00097595f898e3fdadf445793e012	refs/tags/v24.9.2
-bcee65198024fe987e04c6110b00ce71052eda0d	refs/tags/v3.12"
- "404: Not Found")
+ "bcee65198024fe987e04c6110b00ce71052eda0d	refs/tags/v3.12" "404: Not Found")
 ("sbcl" "taffish-org/sbcl"
  "e0c768f956afcb509e44410bf5f8de82aeb6a501	refs/tags/v2.5.2" "404: Not Found")
 ("R" "taffish-org/R"
