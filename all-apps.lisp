@@ -587,7 +587,7 @@ RepeatMasker is a program that screens DNA sequences for interspersed repeats an
 - This app is from https://github.com/GregoryFaust/samblaster
 
 samblaster: a tool to mark duplicates and extract discordant and split reads from sam files.")
-("NGenomeSyn" "taffish-org/NGenomeSYN"
+("NGenomeSyn" "taffish-org/NGenomeSyn"
  "bedb28d5eaf2d5d8a63bd63ed932fdd82cc6bca2	refs/tags/v1.43" "# taf-NGenomeSyn
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
@@ -623,9 +623,16 @@ A genome completeness evaluation tool based on miniprot")
 
 An ultra-fast and efficient genomic tool for coverage calculation")
 ("craq" "taffish-org/craq"
- "95a4594bbda2719bc1a9584f0d51bd4c70a16c59	refs/tags/v1.0.9-alpha" "# taf-craq
+ "03b55cf2110b211b1eb9b280fdb60b8ddb95ad01	refs/tags/v1.0.9-alpha" "# taf-craq
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
 - This app is from https://github.com/JiaoLaboratory/CRAQ
 
 Identification of errors in draft genome assemblies with single-base pair resolution for quality assessment and improvement")
+("merfin" "taffish-org/merfin"
+ "b435f550cc8b7abf1b44311893a0699d886b2e2e	refs/tags/v1.1" "# taf-merfin
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/arangrhie/merfin
+
+Evaluate variant calls and its combination with k-mer multiplicity")
