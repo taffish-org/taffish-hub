@@ -650,3 +650,10 @@ UCSC Kent tools: command-line utilities for fast genome data processing (BED, WI
 - This app is from https://github.com/marbl/merqury
 
 k-mer based assembly evaluation")
+("srf" "taffish-org/srf"
+ "b99aa3c5d8b7991cac4cfb73b5af271ad875131b	refs/tags/v0.20250831" "# taf-srf
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/lh3/srf
+
+SRF: Satellite Repeat Finder")

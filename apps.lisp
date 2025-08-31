@@ -80,3 +80,4 @@
 ("merfin"             "taffish-org/merfin")
 ("ucsc-kent"          "taffish-org/ucsc-kent")
 ("merqury"            "taffish-org/merqury")
+("srf"                "taffish-org/srf")
