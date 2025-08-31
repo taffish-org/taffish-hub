@@ -79,3 +79,4 @@
 ("craq"               "taffish-org/craq")
 ("merfin"             "taffish-org/merfin")
 ("ucsc-kent"          "taffish-org/ucsc-kent")
+("merqury"            "taffish-org/merqury")

@@ -637,9 +637,16 @@ Identification of errors in draft genome assemblies with single-base pair resolu
 
 Evaluate variant calls and its combination with k-mer multiplicity")
 ("ucsc-kent" "taffish-org/ucsc-kent"
- "6d2be086fb43ea9bec650a1e09c7c6de326fb082	refs/tags/v486" "# taf-ucsc-kent
+ "4fb3a6ede3a216083ac30b10239ed55949571f50	refs/tags/v486" "# taf-ucsc-kent
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
 - This app is from https://github.com/ucscGenomeBrowser/kent-core
 
 UCSC Kent tools: command-line utilities for fast genome data processing (BED, WIG, BigWig, BigBed, 2bit)")
+("merqury" "taffish-org/merqury"
+ "36d6b37134eee1c7c734cfb53a82f9a498739c9a	refs/tags/v1.3" "# taf-merqury
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/marbl/merqury
+
+k-mer based assembly evaluation")
