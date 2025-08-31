@@ -655,3 +655,10 @@ k-mer based assembly evaluation")
 - This app is from https://github.com/lh3/srf
 
 SRF: Satellite Repeat Finder")
+("quartet" "taffish-org/quartet"
+ "80e74989820f09d6d86b6e73890151f6e9377746	refs/tags/v1.2.5" "# taf-quartet
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/aaranyue/quarTeT
+
+A telomere-to-telomere toolkit for gap-free genome assembly and centromeric repeat identification")
