@@ -78,3 +78,4 @@
 ("pandepth"           "taffish-org/pandepth")
 ("craq"               "taffish-org/craq")
 ("merfin"             "taffish-org/merfin")
+("ucsc-kent"          "taffish-org/ucsc-kent")
