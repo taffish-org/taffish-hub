@@ -83,3 +83,4 @@
 ("srf"                "taffish-org/srf")
 ("quartet"            "taffish-org/quartet")
 ("biser"              "taffish-org/biser")
+("circos"             "taffish-org/circos")

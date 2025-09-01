@@ -669,3 +669,10 @@ A telomere-to-telomere toolkit for gap-free genome assembly and centromeric repe
 - This app is from https://github.com/0xTCG/biser
 
 A fast tool for detecting and decomposing segmental duplications in genome assemblies")
+("circos" "taffish-org/circos"
+ "aef42c6d1967ba44fea933a485a436ee163b798f	refs/tags/v0.52.2" "# taf-circos
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/vigsterkr/circos
+
+Circos is a software package for visualizing data and information. It visualizes data in a circular layout — this makes Circos ideal for exploring relationships between objects or positions.")
