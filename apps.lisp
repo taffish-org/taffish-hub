@@ -82,3 +82,4 @@
 ("merqury"            "taffish-org/merqury")
 ("srf"                "taffish-org/srf")
 ("quartet"            "taffish-org/quartet")
+("biser"              "taffish-org/biser")
