@@ -676,3 +676,10 @@ A fast tool for detecting and decomposing segmental duplications in genome assem
 - This app is from https://github.com/vigsterkr/circos
 
 Circos is a software package for visualizing data and information. It visualizes data in a circular layout — this makes Circos ideal for exploring relationships between objects or positions.")
+("hicexplorer" "taffish-org/hicexplorer"
+ "edd2bcf337f53e5f2aab40336b04983e095fb8dd	refs/tags/v3.7.6" "# taf-hicexplorer
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/deeptools/HiCExplorer
+
+HiCExplorer is a powerful and easy to use set of tools to process, normalize and visualize Hi-C data.")
