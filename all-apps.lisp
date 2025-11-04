@@ -79,6 +79,13 @@ For the gui mode, we do it together with [noVNC](https://github.com/novnc/noVNC)
   - By default, the /root/ path in the container needs to be retrieved from the global path /home/$USER
   - For the remote server, you can change the localhost in the URL to the server IP to access the taffish-gui on the remote server
   - Only a single screen is created for the same port/container service, and different accesses share the same screen. If you want to start a new service, please open a new docker/podman container(use another user to run taf-gui) and select a new port")
+("bypy" "taffish-org/bypy"
+ "5c6af1c7124fb98513d4c0c3c879a5aec45db6eb	refs/tags/v1.8.9" "# taf-bypy
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/houtianze/bypy
+
+Python client for Baidu Yun (Personal Cloud Storage)")
 ("muscle" "taffish-org/muscle"
  "814ff2be0abea6b8d64ceb94bf8156b9e6d9e299	refs/tags/v5.3" "# taf-muscle
 
@@ -564,7 +571,7 @@ Tandem Repeats Finder: a program to analyze DNA sequences")
 
 Genome annotation with AUGUSTUS")
 ("EVidenceModeler" "taffish-org/EVidenceModeler"
- "3bb39a56ceabb05cd89a63886812f1ab0d42099c	refs/tags/v2.1.0"
+ "8ee32b4faa4f5ef36b59256dd70d735a098b6cd9	refs/tags/v2.1.0"
  "# taf-EVidenceModeler
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.

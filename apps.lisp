@@ -7,6 +7,7 @@
 ("intel-oneapi"       "taffish-org/intel-oneapi")
 ("hello"              "taffish-org/hello")
 ("gui"                "taffish-org/gui")
+("bypy"               "taffish-org/bypy")
 
 ;;TOOLs
 ("muscle"             "taffish-org/muscle")
