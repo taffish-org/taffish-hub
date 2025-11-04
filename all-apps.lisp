@@ -248,7 +248,7 @@ Near-optimal RNA-Seq quantification.")
 
 Tools for working with BUS files.")
 ("hisat2" "taffish-org/hisat2"
- "0004d29c4b895e18496632630041163b1f429dbf	refs/tags/v2.2.1" "# taf-hisat2
+ "0389ce34e2f83f6b011fefde15035cdd60256bc1	refs/tags/v2.2.1" "# taf-hisat2
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
 - This app is from https://github.com/DaehwanKimLab/hisat2
@@ -697,3 +697,10 @@ HiCExplorer is a powerful and easy to use set of tools to process, normalize and
 - This app is from https://github.com/BGI-flexlab/SOAPnuke
 
 A Tool for integrated Quality Control and Preprocessing on FASTQ or BAM/CRAM files")
+("rsem" "taffish-org/rsem"
+ "a80fd01da78078450ba033719a21cbea094277d7	refs/tags/v1.3.3" "# taf-rsem
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/deweylab/RSEM
+
+RSEM: accurate quantification of gene and isoform expression from RNA-Seq data")
