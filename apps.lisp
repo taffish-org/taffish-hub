@@ -86,3 +86,4 @@
 ("biser"              "taffish-org/biser")
 ("circos"             "taffish-org/circos")
 ("hicexplorer"        "taffish-org/hicexplorer")
+("SOAPnuke"           "taffish-org/SOAPnuke")

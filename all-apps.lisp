@@ -80,7 +80,7 @@ For the gui mode, we do it together with [noVNC](https://github.com/novnc/noVNC)
   - For the remote server, you can change the localhost in the URL to the server IP to access the taffish-gui on the remote server
   - Only a single screen is created for the same port/container service, and different accesses share the same screen. If you want to start a new service, please open a new docker/podman container(use another user to run taf-gui) and select a new port")
 ("bypy" "taffish-org/bypy"
- "5c6af1c7124fb98513d4c0c3c879a5aec45db6eb	refs/tags/v1.8.9" "# taf-bypy
+ "6b52d2f40ceee1b09dffe0b0bc1b7de4d726d5e7	refs/tags/v1.8.9" "# taf-bypy
 
 - This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
 - This app is from https://github.com/houtianze/bypy
@@ -690,3 +690,10 @@ Circos is a software package for visualizing data and information. It visualizes
 - This app is from https://github.com/deeptools/HiCExplorer
 
 HiCExplorer is a powerful and easy to use set of tools to process, normalize and visualize Hi-C data.")
+("SOAPnuke" "taffish-org/SOAPnuke"
+ "86a85d9f2e98fb7d57a6bd20feeb64ae3ac0b008	refs/tags/v2.1.9" "# taf-SOAPnuke
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/BGI-flexlab/SOAPnuke
+
+A Tool for integrated Quality Control and Preprocessing on FASTQ or BAM/CRAM files")
