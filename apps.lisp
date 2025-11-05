@@ -89,3 +89,4 @@
 ("SOAPnuke"           "taffish-org/SOAPnuke")
 ("rsem"               "taffish-org/rsem")
 ("stringtie"          "taffish-org/stringtie")
+("CPC2"               "taffish-org/CPC2")

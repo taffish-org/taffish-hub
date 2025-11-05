@@ -1,11 +1,14 @@
 ("debian" "taffish-org/debian"
  "de7d99272d27a8e30b5b01889ac5c06889b41ae1	refs/tags/v12" "404: Not Found")
 ("python" "taffish-org/python"
- "7ee0abc69392bf88bf93fc28b7e1845d05ba7bbe	refs/tags/v3.13.2
+ "4b506828ca17fa5ce89e9e0e3fb40f3b5a1cd8e0	refs/tags/v3.14.0
+b2bb5b20588610d21d005677511d0cd538931588	refs/tags/v3.13.9
+7ee0abc69392bf88bf93fc28b7e1845d05ba7bbe	refs/tags/v3.13.2
 08757f22ff2e52f0f9e2cd62c692a0879d7cb205	refs/tags/v3.12.9
 bc938374839b8b69491c0011fdbbaa3af9091c0d	refs/tags/v3.11.11
 e9d5cfb3dd13cd9ea4d513d0c6688913cf68c390	refs/tags/v3.10.16
-b9f7c3abdb8c0ae67d2505e24c481a50cb370095	refs/tags/v3.9.21"
+b9f7c3abdb8c0ae67d2505e24c481a50cb370095	refs/tags/v3.9.21
+50fc760c44534b656f15a49cc4d07b008354ec1b	refs/tags/v2.7.18"
  "404: Not Found")
 ("conda" "taffish-org/conda"
  "bcee65198024fe987e04c6110b00ce71052eda0d	refs/tags/v3.12" "404: Not Found")
@@ -711,3 +714,10 @@ RSEM: accurate quantification of gene and isoform expression from RNA-Seq data")
 - This app is from https://github.com/gpertea/stringtie
 
 Transcript assembly and quantification for RNA-Seq")
+("CPC2" "taffish-org/CPC2"
+ "f41d9ac6d17ea6324db7059b62a2f03ae98cccf1	refs/tags/v1.0.1" "# taf-CPC2
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/gao-lab/CPC2_standalone
+
+Official repo for the standalone package of Coding Potential Calculator (CPC) 2.")
