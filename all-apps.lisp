@@ -704,3 +704,10 @@ A Tool for integrated Quality Control and Preprocessing on FASTQ or BAM/CRAM fil
 - This app is from https://github.com/deweylab/RSEM
 
 RSEM: accurate quantification of gene and isoform expression from RNA-Seq data")
+("stringtie" "taffish-org/stringtie"
+ "20572bf34857d3a311a3605cd5750fe3512805cc	refs/tags/v3.0.2" "# taf-stringtie
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/gpertea/stringtie
+
+Transcript assembly and quantification for RNA-Seq")

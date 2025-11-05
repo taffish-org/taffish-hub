@@ -88,3 +88,4 @@
 ("hicexplorer"        "taffish-org/hicexplorer")
 ("SOAPnuke"           "taffish-org/SOAPnuke")
 ("rsem"               "taffish-org/rsem")
+("stringtie"          "taffish-org/stringtie")
