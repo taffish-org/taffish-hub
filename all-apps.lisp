@@ -721,3 +721,10 @@ Transcript assembly and quantification for RNA-Seq")
 - This app is from https://github.com/gao-lab/CPC2_standalone
 
 Official repo for the standalone package of Coding Potential Calculator (CPC) 2.")
+("cufflinks" "taffish-org/cufflinks"
+ "20329e442cb3f2d2e50d241535d55042dfcf9b51	refs/tags/v2.2.1" "# taf-cufflinks
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/cole-trapnell-lab/cufflinks
+
+Cufflinks assembles transcripts, estimates their abundances, and tests for differential expression and regulation in RNA-Seq samples.")
