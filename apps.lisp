@@ -91,3 +91,6 @@
 ("stringtie"          "taffish-org/stringtie")
 ("CPC2"               "taffish-org/CPC2")
 ("cufflinks"          "taffish-org/cufflinks")
+("tRNAscan-SE"        "taffish-org/tRNAscan-SE")
+("EDTA"               "taffish-org/EDTA")
+("miniprot"           "taffish-org/miniprot")

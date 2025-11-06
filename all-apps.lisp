@@ -728,3 +728,24 @@ Official repo for the standalone package of Coding Potential Calculator (CPC) 2.
 - This app is from https://github.com/cole-trapnell-lab/cufflinks
 
 Cufflinks assembles transcripts, estimates their abundances, and tests for differential expression and regulation in RNA-Seq samples.")
+("tRNAscan-SE" "taffish-org/tRNAscan-SE"
+ "3a56d3d47a2c3cb9379f01a1d9f1ce36e77ca9b6	refs/tags/v2.0.12" "# taf-tRNAscan-SE
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/UCSC-LoweLab/tRNAscan-SE
+
+A program for detection of tRNA genes")
+("EDTA" "taffish-org/EDTA"
+ "8a946cd4346e73804ebe043c135cf0adbe40bf0c	refs/tags/v2.2.2" "# taf-EDTA
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/oushujun/EDTA
+
+Extensive de-novo TE Annotator")
+("miniprot" "taffish-org/miniprot"
+ "1c5201aadd353c373f6621067aa994a91712cd66	refs/tags/v0.18" "# taf-miniprot
+
+- This is a taf-app(taf-tool), you can use taffish(https://www.taffish.com) to use this taf-app.
+- This app is from https://github.com/lh3/miniprot
+
+Align proteins to genomes with splicing and frameshift")
